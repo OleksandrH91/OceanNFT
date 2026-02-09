@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>Ocean NFT</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="logo header__logo">
+            <svg
+              class="logo__icon logo__icon--position"
+              width="24"
+              height="28"
+              viewBox="107 49 17 28"
+              fill="none"
+              xmlns="www.w3.org"
+            >
+              <path
+                d="M115.459 69.8186L107.23 64.9619L115.454 76.5563L123.688 64.9619L115.454 69.8186H115.459ZM115.582 49.7456L107.355 63.3994L115.582 68.2645L123.811 63.4044L115.582 49.7456Z"
+                fill="url(#paint0_linear_compact)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_compact"
+                  x1="107.23"
+                  y1="49.7456"
+                  x2="127.381"
+                  y2="50.2306"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0.183111" stop-color="#FF56F6" />
+                  <stop offset="0.432593" stop-color="#B936EE" />
+                  <stop offset="0.854443" stop-color="#3BACE2" />
+                  <stop offset="1" stop-color="#406AFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo__text logo__text--position"
+              ><span class="logo__text-part logo__text-part--color-gray"
+                >Ocean</span
+              >NFT</span
+            >
+          </a>
+          <nav class="nav header__nav header__nav--position">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/" class="nav__link">Market</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Features</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/">Community</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__menu">
+            <a class="menu-button" href="/">
+              <img class="menu-button__icon" src="../img/menu.svg" alt="menu" />
+            </a>
+          </div>
+
+          <div class="header__user-controls">
+            <a class="cart-button header__button" href="/">
+              <img class="cart-button__icon" src="../img/cart.svg" alt="cart" />
+            </a>
+            <a class="profile-button header__button" href="/">
+              <img
+                class="profile-button__icon"
+                src="img/profile.svg"
+                alt="profile"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Discover, collect, and sell
+                <span class="hero__span">Timeless</span> NFTs
+              </h1>
+              <p class="hero__subtitle">
+                The world’s first and largest digital marketplace for crypto
+                collectibles and non- fungible tokens (NFTs).
+              </p>
+              <div class="hero__links">
+                <button class="button hero__button">
+                  Explore
+                  <svg
+                    class="button__arrow"
+                    width="52"
+                    height="16"
+                    viewBox="0 0 52 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M43.1129 13.2655L48.6402 7.73822L43.1129 2.21092L44.2184 0L51.9566 7.73822L44.2184 15.4764L43.1129 13.2655Z"
+                      fill="white"
+                    />
+                    <line
+                      x1="48.6403"
+                      y1="7.73827"
+                      x2="4.94944e-05"
+                      y2="7.73827"
+                      stroke="white"
+                      stroke-width="2.21092"
+                    />
+                  </svg>
+                </button>
+                <a class="hero__link" href="/">Create NFT’s</a>
+              </div>
+              <ul class="hero__list hero-list">
+                <li class="hero-list__item">
+                  <h2 class="hero-list__title">35m+</h2>
+                  <p class="hero-list__text">Artwork</p>
+                </li>
+                <li class="hero-list__item">
+                  <h2 class="hero-list__title">18m+</h2>
+                  <p class="hero-list__text">Auctions</p>
+                </li>
+                <li class="hero-list__item">
+                  <h2 class="hero-list__title">500k+</h2>
+                  <p class="hero-list__text">Artists</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero__nft nft">
+              <div class="nft__img">
+                <img src="../img/hero-img.png" alt="NFT" />
+              </div>
+
+              <div class="nft__info">
+                <div class="nft__description">
+                  <h3 class="nft__name">3D Abstract Hand</h3>
+                  <div class="nft__artist">
+                    <img
+                      class="nft__artist-avatar"
+                      src="../img/artist-avatar1.png"
+                      alt="artist avatar"
+                    />
+                    <a class="nft__artist" href="/">@jhonartist</a>
+                    <img
+                      class="nft__artist-status"
+                      src="/img/artist-status.svg"
+                      alt="artist-status"
+                    />
+                  </div>
+                  <div class="nft__price">
+                    <p class="nft__price-label">Reserve price</p>
+                    <div class="nft__price-info">
+                      <img src="../img/nft-icon.svg" alt="nft-icon" />
+                      <span class="nft__price-eth">ETH 9.31</span>
+                      <span class="nft__price-usd">($29,8846)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nft__auction auction">
+                  <div class="auction__info">
+                    <p class="auction__title">Auction Ends in</p>
+                    <ul class="auction__timer timer-list">
+                      <li class="timer-list__item timer-list__item--hours">
+                        <span class="timer-list__value">18</span>
+                        <span class="timer-list__label">Hours</span>
+                      </li>
+                      <li class="timer-list__item timer-list__item--mins">
+                        <span class="timer-list__value">25</span>
+                        <span class="timer-list__label">Mins</span>
+                      </li>
+                      <li class="timer-list__item timer-list__item--secs">
+                        <span class="timer-list__value">44</span>
+                        <span class="timer-list__label">Secs</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="auction__button button">
+                    Place Bid
+                    <svg
+                      width="25"
+                      height="10"
+                      viewBox="0 0 25 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                        fill="white"
+                      />
+                      <line
+                        x1="23.2146"
+                        y1="4.9746"
+                        x2="1.95567e-06"
+                        y2="4.97461"
+                        stroke="white"
+                        stroke-width="1.10546"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__crypto-exchanges crypto-exchanges">
+              <img
+                class="crypto-exchanges__binance"
+                src="../img/binance_logo.svg"
+                alt="binance logo"
+              />
+              <img
+                class="crypto-exchanges__ethereum"
+                src="../img/ethereum_logo.svg"
+                alt="ethereum logo"
+              />
+              <img
+                class="crypto-exchanges__blockchain"
+                src="../img/logo_of_blockchain.io.svg"
+                alt="logo of blockchain"
+              />
+              <img
+                class="crypto-exchanges__bitmex"
+                src="../img/bitmex_logo.svg"
+                alt="bitmex logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="top-nft">
+          <div class="top-nft__container">
+            <div class="top-nft__header">
+              <h2 class="top-nft__title">Top NFT’s now</h2>
+              <a class="top-nft__all" href="/">
+                View all
+                <svg
+                  class="top-nft__all-arrow"
+                  width="52"
+                  height="27"
+                  viewBox="0 0 52 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.94916 13.2656L49.7457 13.2656"
+                    stroke="white"
+                    stroke-width="1.65819"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M42.0075 5.52734L49.7457 13.2656L42.0075 21.0038"
+                    stroke="white"
+                    stroke-width="1.65819"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="top-nft__cards">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-1.png" alt="NFT 1" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Apollo Eth #1289 NFT</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-1.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">18</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">25</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">44</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-2.png" alt="NFT" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Sassy Bull #1169 Art</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-2.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">09</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">15</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">23</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-3.png" alt="NFT" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Satisfying 3D Art</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-3.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">23</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">32</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">56</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-1.png" alt="NFT 1" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Apollo Eth #1289 NFT</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-1.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">18</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">25</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">44</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-2.png" alt="NFT" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Sassy Bull #1169 Art</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-2.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">09</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">15</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">23</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nft">
+                      <div class="nft__img">
+                        <img src="../img/top-nft-3.png" alt="NFT" />
+                      </div>
+
+                      <div class="nft__info">
+                        <div class="nft__description">
+                          <h3 class="nft__name">Satisfying 3D Art</h3>
+                          <div class="nft__artist">
+                            <img
+                              class="nft__artist-avatar"
+                              src="../img/top-nft-avatar-3.png"
+                              alt="artist avatar"
+                            />
+                            <a class="nft__artist" href="/">@jhonartist</a>
+                            <img
+                              class="nft__artist-status"
+                              src="../img/artist-status.svg"
+                              alt="artist-status"
+                            />
+                          </div>
+                          <div class="nft__price">
+                            <p class="nft__price-label">Reserve price</p>
+                            <div class="nft__price-info">
+                              <svg
+                                class="nft__price-icon"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.656 1.06396L5.53943 12.8734L12.656 9.63888V1.06396Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.656 9.63879L5.53943 12.8733L12.656 17.081V9.63879Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M19.7736 12.8734L12.6557 1.06396V9.63888L19.7736 12.8734Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 17.081L19.7736 12.8733L12.6557 9.63879V17.081Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M5.53943 14.2236L12.656 24.253V18.4287L5.53943 14.2236Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.6557 18.4287V24.253L19.7775 14.2236L12.6557 18.4287Z"
+                                  fill="white"
+                                />
+                              </svg>
+                              <span class="nft__price-eth">ETH 9.31</span>
+                              <span class="nft__price-usd">($29,8846)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="nft__auction auction">
+                          <div class="auction__info">
+                            <p class="auction__title">Auction Ends in</p>
+                            <ul class="auction__timer timer-list">
+                              <li
+                                class="timer-list__item timer-list__item--hours"
+                              >
+                                <span class="timer-list__value">23</span>
+                                <span class="timer-list__label">Hours</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--mins"
+                              >
+                                <span class="timer-list__value">32</span>
+                                <span class="timer-list__label">Mins</span>
+                              </li>
+                              <li
+                                class="timer-list__item timer-list__item--secs"
+                              >
+                                <span class="timer-list__value">56</span>
+                                <span class="timer-list__label">Secs</span>
+                              </li>
+                            </ul>
+                          </div>
+                          <button class="auction__button button">
+                            Place Bid
+                            <svg
+                              width="25"
+                              height="10"
+                              viewBox="0 0 25 10"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.0515 7.90286L22.3444 4.61L19.0515 1.31714L19.7101 0L24.3201 4.61L19.7101 9.22L19.0515 7.90286Z"
+                                fill="white"
+                              />
+                              <line
+                                x1="23.2146"
+                                y1="4.9746"
+                                x2="1.95567e-06"
+                                y2="4.97461"
+                                stroke="white"
+                                stroke-width="1.10546"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

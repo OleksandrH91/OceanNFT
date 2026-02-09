@@ -1,0 +1,110 @@
+/* 1. Aldrich */
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/Aldrich-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* 2. Alethia Next */
+@font-face {
+    font-family: 'Alethia Next';
+    src: url('../fonts/AlethiaNext-Light.ttf') format('truetype');
+    font-weight: 300;
+    /* Light */
+    font-display: swap;
+}
+
+/* 3. Inter (Вариативный шрифт) */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+    /* Диапазон весов и автоматическая подстройка оптического размера */
+    font-weight: 100 900;
+    font-optical-sizing: auto;
+    font-display: swap;
+}
+
+/* 4. Lato */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* 5. MuseoModerno */
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url('../fonts/Museo Moderno-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* 6. Orbitron */
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* 7. Rajdhani */
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* 8. Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* 9. Spartan (WOFF2 формат из списка) */
+@font-face {
+    font-family: 'Spartan';
+    src: url('../fonts/Spartan.ttf') format('truetype');
+    font-weight: 800;
+    /* Thin */
+    font-display: swap;
+}

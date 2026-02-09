@@ -1,0 +1,985 @@
+@charset "UTF-8";
+:root {
+  --font-family: "Rajdhani", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Orbitron", sans-serif;
+  --font4: "Aldrich", sans-serif;
+  --font5: "Lato", sans-serif;
+  --font6: "Alethia Next", sans-serif;
+  --font7: "Spartan", sans-serif;
+  --font8: "MuseoModerno", sans-serif;
+}
+
+body {
+  background-image: url("/img/Bg.png");
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 100vh;
+}
+
+.header__container {
+  max-width: 1394.42px;
+  margin: 0px auto;
+  position: relative;
+  padding: 49px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav--position {
+  margin-left: -260px;
+  margin-top: 2px;
+}
+.header__menu {
+  display: none;
+}
+.header__menu:hover {
+  transform: scale(1.4);
+}
+.header__user-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 41px;
+  padding-top: 2px;
+}
+.header__button {
+  transition: transform 0.3s ease;
+}
+.header__button:hover {
+  transform: scale(1.4);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .header__container {
+    margin: 0;
+    padding: 19.91px 6px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__user-controls {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__menu {
+    display: inline-block;
+  }
+  .header__nav {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .header__nav--position {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon--position {
+  margin-bottom: 3px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .logo__icon--position {
+    width: 13.44px;
+    height: 22.47px;
+    margin-top: 6px;
+    margin-left: 2px;
+  }
+}
+.logo__text {
+  font-size: 20px;
+  font-family: var(--font3);
+  font-weight: 700;
+  color: #fff;
+}
+.logo__text:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .logo__text {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+.logo__text--position {
+  margin-left: -5.5px;
+  margin-top: 2px;
+  z-index: 999;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .logo__text--position {
+    margin: 4px;
+  }
+}
+.logo__text-part--color-gray {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav {
+  padding: 0 30px;
+}
+.nav__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 66px;
+}
+.nav__link {
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav__link:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .menu-button__icon {
+    margin-top: 3px;
+    margin-right: 7px;
+  }
+}
+.hero__container {
+  max-width: 1394.42px;
+  margin: 0px auto;
+  padding-top: 49px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__container {
+    flex-direction: column;
+    padding: 0;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+.hero__content {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__content {
+    max-width: 291px;
+    margin-top: 14.3px;
+    margin-left: 16px;
+    order: 1;
+  }
+}
+.hero__title {
+  font-family: var(--font7);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 66px;
+  color: #fff;
+  line-height: 1.35;
+  margin-top: 19px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__title {
+    font-family: var(--font5);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px;
+    line-height: 137%;
+  }
+}
+.hero__span {
+  background: linear-gradient(312deg, #43a5e3 0%, #ff56f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 26.53px;
+  line-height: 44.22px;
+  letter-spacing: 0%;
+  max-width: 650px;
+  color: rgb(255, 255, 255);
+  margin-top: 22px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__subtitle {
+    font-family: Rajdhani;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 23.22px;
+    letter-spacing: 0%;
+    margin-top: 28px;
+  }
+}
+.hero__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__links {
+    padding: 0px;
+    margin-top: 31px;
+    margin-left: -1px;
+    gap: 3px;
+  }
+}
+.hero__button {
+  padding-left: 34px;
+  padding-top: 1px;
+  width: 252px;
+  height: 69px;
+  /* Применяем clip-path к самой кнопке */
+  clip-path: polygon(45px 0, 100% 0, 100% calc(100% - 17px), calc(100% - 34px) 100%, 0 100%, 0 20px);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__button {
+    width: 136px;
+    height: 38px;
+    padding: 0;
+    padding-left: 8px;
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12px;
+    clip-path: polygon(25px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 20px) 100%, 0 100%, 0 10px);
+  }
+}
+.hero__link {
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 19.9px;
+  background: linear-gradient(86deg, #42a6e3 0%, #ff56f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 14px 16px;
+  transition: scale 0.3s ease;
+}
+.hero__link:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__link {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}
+.hero__list {
+  width: 479px;
+  height: 69px;
+  padding-top: 24px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero__nft {
+    order: 2;
+  }
+}
+.hero .nft {
+  max-width: 511px;
+  max-height: 574px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft {
+    max-width: 330px;
+    max-height: 570px;
+    margin-left: 8px;
+    padding-left: 4px;
+    margin-bottom: 100px;
+  }
+}
+.hero .nft__img {
+  max-width: 402px;
+  max-height: 477px;
+  margin-top: 32px;
+  margin-left: -54px;
+  clip-path: polygon(74px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 54px);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__img {
+    margin: 58px auto;
+    width: 100%;
+  }
+}
+.hero .nft__info {
+  width: 336px;
+  height: 182px;
+  margin-top: -118px;
+  z-index: 999;
+  clip-path: polygon(46px 0, 100% 0, 100% 182px, 0 100%, 0 100%, 0 46px);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__info {
+    margin-top: -198px;
+    width: 324px;
+    height: 100vh;
+  }
+}
+.hero .nft__description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27.64px;
+  padding-left: 23.21px;
+  margin-top: -6px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__description {
+    padding-top: 26px;
+    padding-left: 18px;
+  }
+}
+.hero .nft__name {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 17.69px;
+  margin-bottom: -6px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__name {
+    font-size: 17px;
+  }
+}
+.hero .nft__artist-avatar {
+  width: 28.74px;
+  height: 28.74px;
+  margin-right: 2px;
+}
+.hero .nft__artist {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 15.48px;
+  display: flex;
+  margin-top: -1px;
+  color: #fff;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__artist {
+    font-size: 14.92px;
+  }
+}
+.hero .nft__artist-status {
+  margin-left: 5px;
+}
+.hero .nft__price {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 11.05px;
+}
+.hero .nft__price-label {
+  margin-top: 9px;
+  margin-left: -1px;
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 11.05px;
+  line-height: 35.37px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__price-label {
+    font-size: 10.66px;
+    margin-left: 0;
+    margin-top: 7px;
+  }
+}
+.hero .nft__price-info {
+  margin-top: -12.47px;
+  margin-left: -0.49px;
+  display: flex;
+}
+.hero .nft__price-eth {
+  margin-left: 6px;
+  margin-top: 1px;
+  font-family: Orbitron;
+  font-weight: 700;
+  font-size: 9.72px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__price-eth {
+    font-size: 9.37px;
+  }
+}
+.hero .nft__price-usd {
+  font-family: Rajdhani;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11.05px;
+  line-height: 35.37px;
+  vertical-align: middle;
+  margin-top: 1.5px;
+  margin-left: 6px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__price-usd {
+    font-size: 10.66px;
+    margin-top: 0px;
+  }
+}
+.hero .nft__auction {
+  margin-right: 20px;
+}
+.hero .auction {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.hero .auction__info {
+  margin-top: 28px;
+  margin-left: 53px;
+}
+.hero .auction__title {
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 11.05px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .auction__title {
+    font-size: 10.66px;
+    margin-top: -2.1px;
+    margin-left: -2px;
+  }
+}
+.hero .auction__timer {
+  margin-top: -12px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .auction__timer {
+    margin-left: -2px;
+  }
+}
+.hero .auction__button {
+  max-width: 122px;
+  height: 40px;
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 17.69px;
+  padding: 16px 8px;
+  margin-top: 14px;
+  margin-left: 46px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .auction__button {
+    margin-top: 12px;
+    margin-left: 42px;
+    padding-top: 19px;
+  }
+}
+.hero .timer-list {
+  display: flex;
+}
+.hero .timer-list__item {
+  display: flex;
+  flex-direction: column;
+}
+.hero .timer-list__value {
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 17.69px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .timer-list__value {
+    font-size: 17.05px;
+  }
+}
+.hero .timer-list__value:not(:first-child) {
+  margin-left: -2px;
+}
+.hero .timer-list__label {
+  font-family: Rajdhani;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 11.05px;
+  margin-top: -24px;
+  margin-left: 1px;
+}
+.hero .timer-list__item--hours {
+  margin-left: -3px;
+}
+.hero .timer-list__item--mins {
+  margin-left: 17px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .timer-list__item--mins {
+    margin-left: 15px;
+  }
+}
+.hero .timer-list__item--secs {
+  margin-left: 22px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .timer-list__item--secs {
+    margin-left: 20px;
+  }
+}
+.hero__crypto-exchanges {
+  order: 1;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 19.9px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .button {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .button__arrow {
+    width: 25.95px;
+  }
+}
+/* Общий слой для градиентной РАМКИ */
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+  z-index: -2;
+  /* Важно: ::before тоже должен обрезаться по форме кнопки */
+  clip-path: inherit;
+  border-radius: 4px;
+}
+
+/* Общий слой для ФОНА кнопки */
+.button::after {
+  content: "";
+  position: absolute;
+  top: 2px; /* Толщина рамки */
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: linear-gradient(260deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%); /* Внутренний цвет кнопки */
+  z-index: -1;
+  /* Наследует форму от конкретной кнопки */
+  clip-path: inherit;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.hero-list {
+  display: flex;
+  gap: 55px;
+  padding-left: 1px;
+  /* Стили для разделительной полосы после каждого элемента, кроме последнего */
+  /* 1. Сдвигаем линию после первого элемента ВЛЕВО на 1px (от центра) */
+  /* 2. Сдвигаем линию после второго (центрального) элемента ВПРАВО на 1px (от центра) */
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero-list {
+    margin-top: 12px;
+    gap: 60px;
+  }
+}
+.hero-list__item {
+  position: relative; /* Нужен для позиционирования псевдоэлемента */
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero-list__item:nth-child(2) {
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+}
+.hero-list__item:last-child {
+  margin-left: 12px;
+}
+.hero-list__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* right: -20px; Устарело */
+  bottom: -27px;
+  height: 64px;
+  border: 1.11px solid rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero-list__item:not(:last-child)::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hero-list__item:not(:last-child)::after {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .hero-list__item:not(:last-child)::after {
+    display: none;
+  }
+}
+.hero-list__item:first-child::after {
+  right: -17px; /* Было -20px */
+}
+.hero-list__item:nth-child(2)::after {
+  right: -22px; /* Было -20px в вашем предыдущем варианте */
+}
+.hero-list__title {
+  font-family: var(--font4);
+  font-weight: 400;
+  font-size: 39.8px;
+  line-height: 1.33333;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero-list__title {
+    font-family: Aldrich;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28.31px;
+    letter-spacing: 0.12px;
+    vertical-align: middle;
+  }
+}
+.hero-list__text {
+  margin-top: -2px;
+  font-family: var(--font6);
+  font-weight: 400;
+  font-size: 17 px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero-list__text {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 11.8px;
+    letter-spacing: 0.12px;
+    vertical-align: middle;
+    margin-top: 6px;
+  }
+}
+.nft {
+  width: 437.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+.nft__info {
+  width: 437.76px;
+  height: 236px;
+  align-self: flex-end;
+  font-family: var(--font-family);
+  line-height: 35.37px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  /* Полупрозрачный белый фон */
+  background: rgba(255, 255, 255, 0.01);
+  /* Размытие заднего плана */
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  /* Эффект границ */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Мягкая тень */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.nft__description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+  padding-left: 30px;
+}
+.nft__name {
+  font-family: Rajdhani;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 23.04px;
+  line-height: 46.08px;
+}
+.nft__artist-avatar {
+  width: 38px;
+  height: 38px;
+  margin-right: 4px;
+  margin-top: 3px;
+}
+.nft__artist {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 2.28571;
+  color: #fff;
+  display: flex;
+  margin-top: -1px;
+  color: #fff;
+}
+.nft__artist-status {
+  width: 17px;
+  margin-left: 5px;
+}
+.nft__price-label {
+  margin-top: 10px;
+  margin-left: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 3.2;
+  color: #fff;
+}
+.nft__price-info {
+  display: flex;
+  align-items: center;
+  margin-top: -14px;
+  margin-left: -4.4px;
+}
+.nft__price-eth {
+  font-family: Orbitron;
+  font-weight: 700;
+  font-size: 12.66px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.nft__price-usd {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 3.2;
+  color: #fff;
+  margin-top: 1px;
+  margin-left: 9.7px;
+}
+.nft__auction {
+  margin-right: 6px;
+}
+
+.auction {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+.auction__info {
+  margin-top: 34px;
+}
+.auction__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 3.2;
+  color: #fff;
+}
+.auction__timer {
+  margin-top: -12px;
+}
+.auction__button {
+  height: 56px;
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 23.04px;
+  line-height: 100%;
+  margin-top: 22px;
+  margin-left: -16px;
+  padding: 0 20px;
+}
+.timer-list {
+  display: flex;
+  margin-top: -14px;
+}
+.timer-list__item {
+  display: flex;
+  flex-direction: column;
+}
+.timer-list__value {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 2;
+  color: #fff;
+  margin-left: 2px;
+}
+.timer-list__label {
+  font-family: Rajdhani;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14.4px;
+  line-height: 46.08px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-top: -23.5px;
+  margin-left: 1px;
+}
+.timer-list__item--hours {
+  margin-left: -2px;
+}
+.timer-list__item--mins {
+  margin-left: 17px;
+}
+.timer-list__item--secs {
+  margin-left: 30px;
+}
+.crypto-exchanges {
+  max-width: 1390px;
+  margin: 106.82px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 133.76px;
+  padding-left: 3px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .crypto-exchanges {
+    margin-top: 40px;
+    gap: 0;
+    margin-bottom: 0px;
+  }
+}
+.crypto-exchanges__binance {
+  margin-top: -10px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .crypto-exchanges__binance {
+    width: 143px;
+    margin-right: 55px;
+    margin-left: 13px;
+    margin-top: -0.5px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .crypto-exchanges__ethereum {
+    width: 91.81px;
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+}
+.crypto-exchanges__blockchain {
+  margin-left: -1px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .crypto-exchanges__blockchain {
+    width: 188px;
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+}
+.crypto-exchanges__bitmex {
+  margin-top: 12px;
+  margin-left: -1px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .crypto-exchanges__bitmex {
+    width: 106px;
+    margin-top: 32px;
+    margin-left: 26px;
+  }
+}
+.top-nft {
+  padding-left: -4px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.top-nft__container {
+  max-width: 1384px;
+  margin: 110px auto;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__container {
+    margin: 0;
+  }
+}
+.top-nft__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__header {
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+}
+.top-nft__title {
+  margin-left: 2px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__title {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}
+.top-nft__all {
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  margin-right: 19px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__all {
+    display: none;
+  }
+}
+.top-nft__all-arrow {
+  margin-right: -10px;
+  margin-left: 10px;
+}
+.swiper {
+  max-width: 1384px;
+  height: 100%;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .swiper-slide {
+    width: 303.97px;
+    max-width: 100%;
+    height: 431.11px;
+  }
+}

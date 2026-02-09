@@ -1,0 +1,1597 @@
+:root {
+  --font-family: "Rajdhani", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Orbitron", sans-serif;
+  --font4: "Aldrich", sans-serif;
+  --font5: "Lato", sans-serif;
+  --font6: "Alethia Next", sans-serif;
+  --font7: "Spartan", sans-serif;
+  --font8: "MuseoModerno", sans-serif;
+}
+
+body {
+  background-image: url("/img/Bg.png");
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 100vh;
+  // background-image: url("/img/Bg.png");
+  // background-size: cover;
+}
+
+// --------------------------------------------------------------------------------------------
+// -----------------------------------------  HEADER  -----------------------------------------
+// --------------------------------------------------------------------------------------------
+
+.header {
+  &__container {
+    max-width: 1394.42px;
+    margin: 0px auto;
+    position: relative;
+    padding: 49px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+  }
+
+  &__nav--position {
+    margin-left: -260px;
+    margin-top: 2px;
+  }
+
+  &__menu {
+    display: none;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  &__user-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+    padding-top: 2px;
+  }
+
+  &__button {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    &__container {
+      margin: 0;
+      padding: 19.91px 6px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__user-controls {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__menu {
+      display: inline-block;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__nav--position {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+  }
+
+  &__icon--position {
+    margin-bottom: 3px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 13.44px;
+      height: 22.47px;
+      margin-top: 6px;
+      margin-left: 2px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-family: var(--font3);
+    font-weight: 700;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        /* Белое свечение */ 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: var(--font3);
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__text--position {
+    margin-left: -5.5px;
+    margin-top: 2px;
+    z-index: 999;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin: 4px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__text-part {
+  }
+
+  &__text-part--color-gray {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.nav {
+  padding: 0 30px;
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 66px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+      color: #fff;
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        /* Белое свечение */ 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.menu-button {
+  &__icon {
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 3px;
+      margin-right: 7px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+.cart-button {
+  &__icon {
+  }
+}
+
+.profile-button {
+  &__icon {
+  }
+}
+
+// ------------------------------------------------------------------------------------------
+// -----------------------------------------  HERO  -----------------------------------------
+// ------------------------------------------------------------------------------------------
+
+.hero {
+  &__container {
+    max-width: 1394.42px;
+    margin: 0px auto;
+    padding-top: 49px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      flex-direction: column;
+      padding: 0;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__content {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      max-width: 291px;
+      margin-top: 14.3px;
+      margin-left: 16px;
+      order: 1;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__title {
+    font-family: var(--font7);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 66px;
+    color: #fff;
+    line-height: 1.35;
+    margin-top: 19px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: var(--font5);
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 42px;
+      line-height: 137%;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__span {
+    background: linear-gradient(312deg, #43a5e3 0%, #ff56f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 26.53px;
+    line-height: 44.22px;
+    letter-spacing: 0%;
+    max-width: 650px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 22px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Rajdhani;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 23.22px;
+      letter-spacing: 0%;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      padding: 0px;
+      margin-top: 31px;
+      margin-left: -1px;
+      gap: 3px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__button {
+    padding-left: 34px;
+    padding-top: 1px;
+    width: 252px;
+    height: 69px;
+    /* Применяем clip-path к самой кнопке */
+    clip-path: polygon(45px 0, 100% 0, 100% calc(100% - 17px), calc(100% - 34px) 100%, 0 100%, 0 20px);
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 136px;
+      height: 38px;
+      padding: 0;
+      padding-left: 8px;
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 12px;
+
+      clip-path: polygon(25px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 20px) 100%, 0 100%, 0 10px);
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__link {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 19.9px;
+    background: linear-gradient(86deg, #42a6e3 0%, #ff56f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 14px 16px;
+    transition: scale 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+    }
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 12px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list {
+    width: 479px;
+    height: 69px;
+    padding-top: 24px;
+  }
+
+  &__nft {
+    @media (min-width: 375px) and (max-width: 480px) {
+      order: 2;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  .nft {
+    max-width: 511px;
+    max-height: 574px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      max-width: 330px;
+      max-height: 570px;
+      margin-left: 8px;
+      padding-left: 4px;
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    &__img {
+      max-width: 402px;
+      max-height: 477px;
+      margin-top: 32px;
+      margin-left: -54px;
+      clip-path: polygon(74px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 54px);
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin: 58px auto;
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__info {
+      width: 336px;
+      height: 182px;
+      margin-top: -118px;
+      z-index: 999;
+      clip-path: polygon(46px 0, 100% 0, 100% 182px, 0 100%, 0 100%, 0 46px);
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin-top: -198px;
+        width: 324px;
+        height: 100vh;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      padding-top: 27.64px;
+      padding-left: 23.21px;
+      margin-top: -6px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        padding-top: 26px;
+        padding-left: 18px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__name {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 17.69px;
+      margin-bottom: -6px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__artist-avatar {
+      width: 28.74px;
+      height: 28.74px;
+      margin-right: 2px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__artist {
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 15.48px;
+      display: flex;
+      margin-top: -1px;
+      color: #fff;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 14.92px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__artist-status {
+      margin-left: 5px;
+    }
+
+    &__price {
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 11.05px;
+    }
+
+    &__price-label {
+      margin-top: 9px;
+      margin-left: -1px;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 11.05px;
+      line-height: 35.37px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 10.66px;
+        margin-left: 0;
+        margin-top: 7px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__price-info {
+      margin-top: -12.47px;
+      margin-left: -0.49px;
+      display: flex;
+    }
+
+    &__price-eth {
+      margin-left: 6px;
+      margin-top: 1px;
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 9.72px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 9.37px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__price-usd {
+      font-family: Rajdhani;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 11.05px;
+      line-height: 35.37px;
+      vertical-align: middle;
+      margin-top: 1.5px;
+      margin-left: 6px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 10.66px;
+        margin-top: 0px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__auction {
+      margin-right: 20px;
+    }
+  }
+
+  .auction {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+
+    &__info {
+      margin-top: 28px;
+      margin-left: 53px;
+    }
+
+    &__title {
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 11.05px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 10.66px;
+        margin-top: -2.1px;
+        margin-left: -2px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__timer {
+      margin-top: -12px;
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin-left: -2px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__button {
+      max-width: 122px;
+      height: 40px;
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 17.69px;
+      padding: 16px 8px;
+      margin-top: 14px;
+      margin-left: 46px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin-top: 12px;
+        margin-left: 42px;
+        padding-top: 19px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  .timer-list {
+    display: flex;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__value {
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 17.69px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 17.05px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__value:not(:first-child) {
+      margin-left: -2px;
+    }
+
+    &__label {
+      font-family: Rajdhani;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 11.05px;
+      margin-top: -24px;
+      margin-left: 1px;
+    }
+
+    &__item--hours {
+      margin-left: -3px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__item--mins {
+      margin-left: 17px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin-left: 15px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &__item--secs {
+      margin-left: 22px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+        margin-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  &__crypto-exchanges {
+    order: 1;
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 19.9px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: transform 0.3s ease;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12px;
+
+    &__arrow {
+      width: 25.95px;
+    }
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+}
+
+/* Общий слой для градиентной РАМКИ */
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+  z-index: -2;
+  /* Важно: ::before тоже должен обрезаться по форме кнопки */
+  clip-path: inherit;
+  border-radius: 4px;
+}
+
+/* Общий слой для ФОНА кнопки */
+.button::after {
+  content: "";
+  position: absolute;
+  top: 2px; /* Толщина рамки */
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: linear-gradient(
+    260deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  ); /* Внутренний цвет кнопки */
+  z-index: -1;
+  /* Наследует форму от конкретной кнопки */
+  clip-path: inherit;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.hero-list {
+  display: flex;
+  gap: 55px;
+  padding-left: 1px;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    margin-top: 12px;
+    gap: 60px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__item {
+    position: relative; /* Нужен для позиционирования псевдоэлемента */
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-left: 4px;
+      margin-right: -4px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__item:last-child {
+    margin-left: 12px;
+  }
+
+  /* Стили для разделительной полосы после каждого элемента, кроме последнего */
+  &__item:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /* right: -20px; Устарело */
+    bottom: -27px;
+    height: 64px;
+    border: 1.11px solid rgba(255, 255, 255, 0.6);
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
+  }
+
+  /* 1. Сдвигаем линию после первого элемента ВЛЕВО на 1px (от центра) */
+  &__item:first-child::after {
+    right: -17px; /* Было -20px */
+  }
+
+  /* 2. Сдвигаем линию после второго (центрального) элемента ВПРАВО на 1px (от центра) */
+  &__item:nth-child(2)::after {
+    right: -22px; /* Было -20px в вашем предыдущем варианте */
+  }
+
+  &__title {
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 39.8px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    color: #fff;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Aldrich;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 18px;
+      line-height: 28.31px;
+      letter-spacing: 0.12px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__text {
+    margin-top: -2px;
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: 17 px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #fff;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Lato;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 12px;
+      line-height: 11.8px;
+      letter-spacing: 0.12px;
+      vertical-align: middle;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------  NFT  -----------------------------------------
+// -----------------------------------------------------------------------------------------
+
+.nft {
+  width: 437.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    // max-width: 303px;
+    // max-height: 431.13px;
+    // margin-left: 8px;
+    // padding-left: 4px;
+    // margin-bottom: 100px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__img {
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin: 58px auto;
+      // width: 100%;
+      // margin: 0 auto;
+      // display: block;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__info {
+    width: 437.76px;
+    height: 236px;
+    align-self: flex-end;
+    font-family: var(--font-family);
+    line-height: 35.37px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    /* Полупрозрачный белый фон */
+    background: rgba(255, 255, 255, 0.01);
+    /* Размытие заднего плана */
+    backdrop-filter: blur(40px);
+    /* Эффект границ */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    // border-radius: 8px;
+    /* Мягкая тень */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin-top: -59px auto;
+      // width: 303px;
+      // height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    padding-left: 30px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // padding-top: 26px;
+      // padding-left: 18px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__name {
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 23.04px;
+    line-height: 46.08px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 17px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__artist-avatar {
+    width: 38px;
+    height: 38px;
+    margin-right: 4px;
+    margin-top: 3px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin-top: 2px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__artist {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2.28571;
+    color: #fff;
+    display: flex;
+    margin-top: -1px;
+    color: #fff;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 14.92px;
+      // margin-top: -2px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__artist-status {
+    width: 17px;
+    margin-left: 5px;
+  }
+
+  &__price {
+  }
+
+  &__price-label {
+    margin-top: 10px;
+    margin-left: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 3.2;
+    color: #fff;
+  }
+
+  &__price-info {
+    display: flex;
+    align-items: center;
+    margin-top: -14px;
+    margin-left: -4.4px;
+  }
+
+  &__price-icon {
+  }
+
+  &__price-eth {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12.66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 9.37px;
+      // margin-top: -1px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__price-usd {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 3.2;
+    color: #fff;
+    margin-top: 1px;
+    margin-left: 9.7px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 10.66px;
+      // margin-top: 0px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__auction {
+    margin-right: 6px;
+  }
+}
+
+.auction {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+
+  &__info {
+    margin-top: 34px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+
+    // line-height: 46px;
+    line-height: 3.2;
+    color: #fff;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 10.66px;
+      // margin-top: -3px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__timer {
+    margin-top: -12px;
+  }
+
+  &__button {
+    height: 56px;
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 23.04px;
+    line-height: 100%;
+
+    margin-top: 22px;
+    margin-left: -16px;
+    padding: 0 20px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin-top: 16px;
+      // margin-left: 44px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+.timer-list {
+  display: flex;
+  margin-top: -14px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__value {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 2;
+    color: #fff;
+    margin-left: 2px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // font-size: 17.05px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__label {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14.4px;
+    line-height: 46.08px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+    margin-top: -23.5px;
+    margin-left: 1px;
+  }
+
+  &__item--hours {
+    margin-left: -2px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__item--mins {
+    margin-left: 17px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin-left: 15px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__item--secs {
+    margin-left: 30px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      // margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------------------------
+// ------------------------------------ Crypto Exchanges ----------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+.crypto-exchanges {
+  max-width: 1390px;
+  margin: 106.82px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 133.76px;
+  padding-left: 3px;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    margin-top: 40px;
+    gap: 0;
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__binance {
+    margin-top: -10px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 143px;
+      margin-right: 55px;
+      margin-left: 13px;
+      margin-top: -0.5px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__ethereum {
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 91.81px;
+      margin-top: 2px;
+      margin-left: 1px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__blockchain {
+    margin-left: -1px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 188px;
+      margin-top: 30px;
+      margin-left: 3px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__bitmex {
+    margin-top: 12px;
+    margin-left: -1px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 106px;
+      margin-top: 32px;
+      margin-left: 26px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------------
+// ------------------------------ TOP NFTs -----------------------------------------
+// ---------------------------------------------------------------------------------
+
+.top-nft {
+  padding-left: -4px;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    margin-top: 0;
+    margin-bottom: 20px; // потом удалить
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__container {
+    max-width: 1384px;
+    margin: 110px auto;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 50px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 10px;
+      margin-left: 8px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__title {
+    margin-left: 2px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 16px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__all {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    margin-right: 19px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__all-arrow {
+    margin-right: -10px;
+    margin-left: 10px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+  &__cards {
+  }
+}
+
+.swiper {
+  max-width: 1384px;
+  height: 100%;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+}
+
+.swiper-wrapper {
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+}
+
+.swiper-slide {
+  @media (min-width: 375px) and (max-width: 480px) {
+    width: 303.97px;
+    max-width: 100%;
+    height: 431.11px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+}
