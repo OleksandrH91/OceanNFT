@@ -1878,3 +1878,113 @@ body {
   @media (max-width: 1440px) {
   }
 }
+
+// ---------------------------------------------------------------------------------------
+// ------------------------------ Collection Categories ----------------------------------
+// ---------------------------------------------------------------------------------------
+
+.collection-categories {
+  &__container {
+    max-width: 1346.45px;
+    width: 100%;
+    height: auto;
+    margin: 214px;
+    margin-left: 94px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    margin-bottom: 48px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__title {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 26.53px;
+    color: #fff;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    max-width: calc((368.12px * 2) + 44px);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+
+    button {
+      width: 368.12px;
+      height: 100px;
+      font-family: Orbitron;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 26.53px;
+      text-align: center;
+      padding-top: 2px;
+      padding-left: 2px;
+
+      &:hover {
+        background: linear-gradient(90deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #ff56f6 117.04%);
+      }
+    }
+  }
+
+  &__images {
+    margin-top: -54px;
+  }
+
+  &__footer {
+    align-self: flex-end;
+    margin-top: 42px;
+  }
+
+  &__link {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 19.9px;
+    line-height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__all-arrow {
+  }
+}
+
+.button-photography {
+}
+.button-sports {
+}
+.button-brands {
+}
+.button-collectibles {
+}
+.button-art {
+}
+.button-utility {
+}
+.collection-categories-img {
+}

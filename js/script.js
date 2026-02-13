@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   speed: 800, // Скорость самой анимации перелета слайда
   
   // Базовые настройки
-  slidesPerView: 1,      
+  slidesPerView: 1.1,      
   spaceBetween: 20,     
   loop: true,           
 
