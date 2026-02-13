@@ -322,12 +322,13 @@ body {
   max-height: 477px;
   margin-top: 32px;
   margin-left: -54px;
-  clip-path: polygon(74px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 54px);
+  clip-path: polygon(93px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 63px);
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__img {
     margin: 58px auto;
     width: 100%;
+    clip-path: polygon(74px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50px);
   }
 }
 .hero .nft__info {
@@ -347,21 +348,19 @@ body {
 .hero .nft__description {
   display: flex;
   flex-direction: column;
-  padding-top: 27.64px;
-  padding-left: 23.21px;
-  margin-top: -6px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__description {
-    padding-top: 26px;
-    padding-left: 18px;
+    margin-top: -2px;
+    margin-left: -4px;
   }
 }
 .hero .nft__name {
   font-weight: 700;
   font-style: Bold;
   font-size: 17.69px;
-  margin-bottom: -6px;
+  margin-top: 22px;
+  margin-left: 22px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__name {
@@ -371,23 +370,45 @@ body {
 .hero .nft__artist-avatar {
   width: 28.74px;
   height: 28.74px;
-  margin-right: 2px;
+  margin-left: 27px;
+  margin-top: 0px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__artist-avatar {
+    width: 28px;
+    height: 28px;
+    margin-top: -1px;
+  }
 }
 .hero .nft__artist {
   font-weight: 600;
   font-style: SemiBold;
   font-size: 15.48px;
-  display: flex;
-  margin-top: -1px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: -7px;
+  margin-left: -4px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__artist {
     font-size: 14.92px;
+    margin-left: -5px;
+    margin-top: -6px;
   }
 }
+.hero .nft__artist-link {
+  margin-top: -1px;
+}
 .hero .nft__artist-status {
-  margin-left: 5px;
+  width: 13px;
+  height: 13px;
+  margin-left: -1px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__artist-status {
+    margin-left: 3px;
+  }
 }
 .hero .nft__price {
   font-weight: 600;
@@ -396,7 +417,7 @@ body {
 }
 .hero .nft__price-label {
   margin-top: 9px;
-  margin-left: -1px;
+  margin-left: -7px;
   font-family: Rajdhani;
   font-weight: 600;
   font-style: SemiBold;
@@ -406,14 +427,13 @@ body {
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__price-label {
     font-size: 10.66px;
-    margin-left: 0;
     margin-top: 7px;
   }
 }
 .hero .nft__price-info {
-  margin-top: -12.47px;
-  margin-left: -0.49px;
   display: flex;
+  margin-left: -7.7px;
+  margin-top: -14px;
 }
 .hero .nft__price-eth {
   margin-left: 6px;
@@ -433,27 +453,27 @@ body {
   font-style: Regular;
   font-size: 11.05px;
   line-height: 35.37px;
-  vertical-align: middle;
-  margin-top: 1.5px;
+  margin-top: 1px;
   margin-left: 6px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .nft__price-usd {
     font-size: 10.66px;
-    margin-top: 0px;
   }
 }
 .hero .nft__auction {
-  margin-right: 20px;
+  margin-top: 16px;
+  margin-right: 18px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .hero .nft__auction {
+    font-size: 10.66px;
+    margin-top: 14px;
+  }
 }
 .hero .auction {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-}
-.hero .auction__info {
-  margin-top: 28px;
-  margin-left: 53px;
 }
 .hero .auction__title {
   font-family: Rajdhani;
@@ -464,35 +484,24 @@ body {
 @media (min-width: 375px) and (max-width: 480px) {
   .hero .auction__title {
     font-size: 10.66px;
-    margin-top: -2.1px;
-    margin-left: -2px;
   }
 }
 .hero .auction__timer {
   margin-top: -12px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
-  .hero .auction__timer {
-    margin-left: -2px;
-  }
-}
 .hero .auction__button {
-  max-width: 122px;
-  height: 40px;
   font-family: Rajdhani;
   font-weight: 600;
   font-style: SemiBold;
   font-size: 17.69px;
-  padding: 16px 8px;
-  margin-top: 14px;
-  margin-left: 46px;
+  margin-top: 12px;
+  margin-left: 2px;
+  padding: 14px 4px 10px 12px;
 }
-@media (min-width: 375px) and (max-width: 480px) {
-  .hero .auction__button {
-    margin-top: 12px;
-    margin-left: 42px;
-    padding-top: 19px;
-  }
+.hero .auction__button svg {
+  width: 36px;
+  margin-left: -6px;
+  margin-top: -4px;
 }
 .hero .timer-list {
   display: flex;
@@ -512,94 +521,26 @@ body {
     font-size: 17.05px;
   }
 }
-.hero .timer-list__value:not(:first-child) {
-  margin-left: -2px;
+.hero .timer-list .value-mins {
+  margin-left: 18px;
+}
+.hero .timer-list .value-sec {
+  margin-left: 23px;
 }
 .hero .timer-list__label {
   font-family: Rajdhani;
   font-weight: 500;
   font-style: Medium;
   font-size: 11.05px;
-  margin-top: -24px;
-  margin-left: 1px;
 }
-.hero .timer-list__item--hours {
-  margin-left: -3px;
+.hero .timer-list .label-mins {
+  margin-left: 18px;
 }
-.hero .timer-list__item--mins {
-  margin-left: 17px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .hero .timer-list__item--mins {
-    margin-left: 15px;
-  }
-}
-.hero .timer-list__item--secs {
-  margin-left: 22px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .hero .timer-list__item--secs {
-    margin-left: 20px;
-  }
+.hero .timer-list .label-sec {
+  margin-left: 24px;
 }
 .hero__crypto-exchanges {
   order: 1;
-}
-
-.button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 11px;
-  font-family: var(--font3);
-  font-weight: 700;
-  font-size: 19.9px;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  transition: transform 0.3s ease;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .button {
-    font-family: Orbitron;
-    font-weight: 700;
-    font-size: 12px;
-  }
-  .button__arrow {
-    width: 25.95px;
-  }
-}
-/* Общий слой для градиентной РАМКИ */
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
-  z-index: -2;
-  /* Важно: ::before тоже должен обрезаться по форме кнопки */
-  clip-path: inherit;
-  border-radius: 4px;
-}
-
-/* Общий слой для ФОНА кнопки */
-.button::after {
-  content: "";
-  position: absolute;
-  top: 2px; /* Толщина рамки */
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  background: linear-gradient(260deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%); /* Внутренний цвет кнопки */
-  z-index: -1;
-  /* Наследует форму от конкретной кнопки */
-  clip-path: inherit;
-}
-
-.button:hover {
-  transform: scale(1.1);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
 .hero-list {
@@ -698,6 +639,106 @@ body {
     margin-top: 6px;
   }
 }
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 19.9px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .button {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .button__arrow {
+    width: 25.95px;
+  }
+}
+/* Общий слой для градиентной РАМКИ */
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+  z-index: -2;
+  /* Важно: ::before тоже должен обрезаться по форме кнопки */
+  clip-path: inherit;
+  border-radius: 4px;
+}
+
+/* Общий слой для ФОНА кнопки */
+.button::after {
+  content: "";
+  position: absolute;
+  top: 2px; /* Толщина рамки */
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: linear-gradient(260deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%); /* Внутренний цвет кнопки */
+  z-index: -1;
+  /* Наследует форму от конкретной кнопки */
+  clip-path: inherit;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.button-transparent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 19.9px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: transparent; /* Сама кнопка прозрачная */
+  transition: transform 0.3s ease;
+  /* Адаптив оставляем без изменений */
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .button-transparent {
+    font-family: Orbitron;
+    font-size: 12px;
+  }
+  .button-transparent__arrow {
+    width: 25.95px;
+  }
+}
+
+/* Теперь только ОДИН псевдоэлемент создает рамку */
+.button-transparent::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* Это и будет толщина вашей рамки */
+  border-radius: 4px;
+  /* Градиент рамки */
+  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+  /* МАГИЯ: Маска вырезает внутреннюю часть, оставляя только область padding */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  clip-path: inherit; /* Если у кнопки есть сложный clip-path */
+}
+
 .nft {
   width: 437.76px;
   display: flex;
@@ -713,7 +754,6 @@ body {
   line-height: 35.37px;
   display: flex;
   justify-content: space-between;
-  gap: 0;
   /* Полупрозрачный белый фон */
   background: rgba(255, 255, 255, 0.01);
   /* Размытие заднего плана */
@@ -727,8 +767,6 @@ body {
 .nft__description {
   display: flex;
   flex-direction: column;
-  padding-top: 34px;
-  padding-left: 30px;
 }
 .nft__name {
   font-family: Rajdhani;
@@ -736,12 +774,15 @@ body {
   font-style: Bold;
   font-size: 23.04px;
   line-height: 46.08px;
+  margin-top: 36px;
+  margin-left: 31px;
 }
 .nft__artist-avatar {
   width: 38px;
   height: 38px;
   margin-right: 4px;
   margin-top: 3px;
+  margin-left: 30px;
 }
 .nft__artist {
   font-weight: 600;
@@ -749,12 +790,24 @@ body {
   line-height: 2.28571;
   color: #fff;
   display: flex;
-  margin-top: -1px;
-  color: #fff;
+  margin-top: -2px;
+  margin-left: 1px;
+}
+.nft__artist-link {
+  color: inherit;
+}
+.nft__artist-link:hover {
+  background: linear-gradient(312deg, #43a5e3 0%, #ff56f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nft__artist-status {
   width: 17px;
-  margin-left: 5px;
+  margin-left: 7px;
+}
+.nft__price {
+  margin-left: 30px;
 }
 .nft__price-label {
   margin-top: 10px;
@@ -774,8 +827,6 @@ body {
   font-family: Orbitron;
   font-weight: 700;
   font-size: 12.66px;
-  line-height: 100%;
-  letter-spacing: 0%;
 }
 .nft__price-usd {
   font-family: var(--font-family);
@@ -787,16 +838,13 @@ body {
   margin-left: 9.7px;
 }
 .nft__auction {
-  margin-right: 6px;
+  margin-top: 24px;
+  margin-right: 22px;
 }
 
 .auction {
   display: flex;
   flex-direction: column;
-  margin-right: 24px;
-}
-.auction__info {
-  margin-top: 34px;
 }
 .auction__title {
   font-family: var(--font-family);
@@ -804,21 +852,26 @@ body {
   font-size: 14px;
   line-height: 3.2;
   color: #fff;
+  margin-top: 12px;
+  margin-left: 12px;
 }
 .auction__timer {
-  margin-top: -12px;
+  margin-left: 10px;
 }
 .auction__button {
-  height: 56px;
   font-family: Rajdhani;
   font-weight: 600;
   font-style: SemiBold;
   font-size: 23.04px;
   line-height: 100%;
-  margin-top: 22px;
-  margin-left: -16px;
-  padding: 0 20px;
+  margin-top: 23px;
+  margin-left: -1px;
+  padding: 15px 4px 16px 16px;
 }
+.auction__button svg {
+  width: 44px;
+}
+
 .timer-list {
   display: flex;
   margin-top: -14px;
@@ -835,26 +888,28 @@ body {
   color: #fff;
   margin-left: 2px;
 }
+.timer-list .value-mins {
+  margin-left: 23px;
+}
+.timer-list .value-sec {
+  margin-left: 30px;
+}
 .timer-list__label {
   font-family: Rajdhani;
   font-weight: 500;
   font-style: Medium;
   font-size: 14.4px;
   line-height: 46.08px;
-  letter-spacing: 0px;
-  vertical-align: middle;
-  margin-top: -23.5px;
-  margin-left: 1px;
+  margin-top: -24px;
+  margin-left: -1px;
 }
-.timer-list__item--hours {
-  margin-left: -2px;
+.timer-list .label-mins {
+  margin-left: 23px;
 }
-.timer-list__item--mins {
-  margin-left: 17px;
+.timer-list .label-sec {
+  margin-left: 32px;
 }
-.timer-list__item--secs {
-  margin-left: 30px;
-}
+
 .crypto-exchanges {
   max-width: 1390px;
   margin: 106.82px auto;
@@ -915,7 +970,6 @@ body {
 @media (min-width: 375px) and (max-width: 480px) {
   .top-nft {
     margin-top: 0;
-    margin-bottom: 20px;
   }
 }
 .top-nft__container {
@@ -935,12 +989,13 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .top-nft__header {
     margin-top: 10px;
     margin-left: 8px;
+    margin-bottom: 0px;
   }
 }
 .top-nft__title {
@@ -972,14 +1027,217 @@ body {
   margin-right: -10px;
   margin-left: 10px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft {
+    width: 303.97px;
+    margin-left: 11px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__img img {
+    width: 100%;
+    height: 267.13px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__info {
+    width: 303.97px;
+    height: 163.98px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__name {
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 13.6px;
+    line-height: 27.2px;
+    margin-top: 27px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__artist-avatar {
+    width: 26.5px;
+    height: 26.5px;
+    margin-top: 1.5px;
+    margin-left: 30.5px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__artist {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 11.9px;
+    line-height: 27.2px;
+    margin-top: 3px;
+    margin-left: -11px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__artist-link {
+    margin-left: -1px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__artist-status {
+    width: 13px;
+    height: 13px;
+    margin-left: 12.5px;
+    margin-top: 8px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__price {
+    margin-left: 19.5px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__price-label {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 8.5px;
+    line-height: 27.2px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__price-info {
+    margin-top: -5px;
+    margin-left: -4px;
+  }
+  .top-nft__cards .nft__price-info svg {
+    width: 17.58px;
+    height: 17.58px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__price-eth {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 7.47px;
+    line-height: 100%;
+    margin-left: 1.8px;
+    margin-top: -2px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .nft__price-usd {
+    font-family: Rajdhani;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 8.5px;
+    line-height: 27.2px;
+    margin-top: 0px;
+    margin-left: 12px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .auction {
+    margin-right: 4px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .auction__title {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 8.5px;
+    line-height: 27.2px;
+    margin-top: 2px;
+    margin-left: 6px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .auction__timer {
+    margin-top: -5px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .auction__button {
+    border-width: 1.7px;
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 13.6px;
+    margin-top: 19px;
+    margin-right: 13px;
+    padding: 11px 16px 14px 10px;
+  }
+  .top-nft__cards .auction__button svg {
+    width: 22px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list__value {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 13.6px;
+    line-height: 27.2px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .value-hours {
+    margin-left: -4px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .value-mins {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .value-sec {
+    margin-left: 24px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list__label {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 8.5px;
+    line-height: 27.2px;
+    margin-top: -12px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .label-hours {
+    margin-left: -6px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .label-mins {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__cards .timer-list .label-sec {
+    margin-left: 24px;
+  }
+}
+.top-nft__button {
+  display: none;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-nft__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Применяем clip-path к самой кнопке */
+    margin-bottom: 20px;
+  }
+  .top-nft__button .button {
+    width: 133.3px;
+    height: 34.21px;
+    padding-left: 12px;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 16px) 100%, 0 100%, 0 10px);
+  }
+}
 .swiper {
   max-width: 1384px;
   height: 100%;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .swiper-slide {
-    width: 303.97px;
-    max-width: 100%;
-    height: 431.11px;
-  }
 }
