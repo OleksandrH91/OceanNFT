@@ -1892,12 +1892,28 @@ body {
     margin-left: 94px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      max-width: 323.35px;
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 110.57px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__header {
     margin-bottom: 48px;
 
     @media (min-width: 375px) and (max-width: 480px) {
+      margin-bottom: 23px;
     }
 
     @media (max-width: 768px) {
@@ -1913,6 +1929,9 @@ body {
     font-size: 26.53px;
     color: #fff;
     @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 16px;
     }
 
     @media (max-width: 768px) {
@@ -1932,6 +1951,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 44px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      gap: 17.86px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
 
     button {
       width: 368.12px;
@@ -1947,30 +1975,91 @@ body {
       &:hover {
         background: linear-gradient(90deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #ff56f6 117.04%);
       }
+      @media (min-width: 375px) and (max-width: 480px) {
+        width: 152.51px;
+        height: 40.76px;
+        border-width: 1.19px;
+        font-family: Orbitron;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 10.99px;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
     }
   }
 
   &__images {
     margin-top: -54px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 185.89px;
+      height: 347.72px;
+      margin-top: -4px;
+      margin-left: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__footer {
     align-self: flex-end;
     margin-top: 42px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__link {
     font-family: Orbitron;
     font-weight: 700;
     font-size: 19.9px;
-    line-height: 100%;
     color: #fff;
     display: flex;
     align-items: center;
     gap: 15px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 8.24px;
+      gap: 6.2px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__all-arrow {
+    @media (min-width: 375px) and (max-width: 480px) {
+      width: 21.52px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 }
 
