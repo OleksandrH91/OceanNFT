@@ -400,6 +400,9 @@ body {
 .hero .nft__artist-link {
   margin-top: -1px;
 }
+.hero .nft__artist-link:hover {
+  transform: translateX(-4px);
+}
 .hero .nft__artist-status {
   width: 13px;
   height: 13px;
@@ -547,9 +550,6 @@ body {
   display: flex;
   gap: 55px;
   padding-left: 1px;
-  /* Стили для разделительной полосы после каждого элемента, кроме последнего */
-  /* 1. Сдвигаем линию после первого элемента ВЛЕВО на 1px (от центра) */
-  /* 2. Сдвигаем линию после второго (центрального) элемента ВПРАВО на 1px (от центра) */
 }
 @media (min-width: 375px) and (max-width: 480px) {
   .hero-list {
@@ -569,11 +569,13 @@ body {
 .hero-list__item:last-child {
   margin-left: 12px;
 }
+.hero-list {
+  /* Стили для разделительной полосы после каждого элемента, кроме последнего */
+}
 .hero-list__item:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
-  /* right: -20px; Устарело */
   bottom: -27px;
   height: 64px;
   border: 1.11px solid rgba(255, 255, 255, 0.6);
@@ -593,11 +595,17 @@ body {
     display: none;
   }
 }
+.hero-list {
+  /* 1. Сдвигаем линию после первого элемента ВЛЕВО на 1px (от центра) */
+}
 .hero-list__item:first-child::after {
-  right: -17px; /* Было -20px */
+  right: -17px;
+}
+.hero-list {
+  /* 2. Сдвигаем линию после второго (центрального) элемента ВПРАВО на 1px (от центра) */
 }
 .hero-list__item:nth-child(2)::after {
-  right: -22px; /* Было -20px в вашем предыдущем варианте */
+  right: -22px;
 }
 .hero-list__title {
   font-family: var(--font4);
@@ -680,7 +688,7 @@ body {
 .button::after {
   content: "";
   position: absolute;
-  top: 2px; /* Толщина рамки */
+  top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
@@ -757,8 +765,7 @@ body {
   /* Полупрозрачный белый фон */
   background: rgba(255, 255, 255, 0.01);
   /* Размытие заднего плана */
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
   /* Эффект границ */
   border: 1px solid rgba(255, 255, 255, 0.2);
   /* Мягкая тень */
@@ -1006,24 +1013,26 @@ body {
     font-family: Orbitron;
     font-weight: 700;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 100%;
-    letter-spacing: 0%;
   }
 }
-.top-nft__all {
+.top-nft__link {
   font-family: var(--font3);
   font-weight: 700;
   font-size: 26px;
   color: #fff;
   margin-right: 19px;
 }
+.top-nft__link:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
 @media (min-width: 375px) and (max-width: 480px) {
-  .top-nft__all {
+  .top-nft__link {
     display: none;
   }
 }
-.top-nft__all-arrow {
+.top-nft__link-arrow {
   margin-right: -10px;
   margin-left: 10px;
 }
@@ -1228,7 +1237,6 @@ body {
     justify-content: center;
     margin-top: 20px;
     /* Применяем clip-path к самой кнопке */
-    margin-bottom: 20px;
   }
   .top-nft__button .button {
     width: 133.3px;
@@ -1236,9 +1244,12 @@ body {
     padding-left: 12px;
     clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 16px) 100%, 0 100%, 0 10px);
   }
+  .top-nft__button {
+    margin-bottom: 20px;
+  }
 }
 .swiper {
-  max-width: 1384px;
+  max-width: 1386px;
   height: 100%;
 }
 .collection-categories__container {
@@ -1247,6 +1258,7 @@ body {
   height: auto;
   margin: 214px;
   margin-left: 94px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -1355,6 +1367,10 @@ body {
   align-items: center;
   gap: 15px;
 }
+.collection-categories__link:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
 @media (min-width: 375px) and (max-width: 480px) {
   .collection-categories__link {
     font-family: Orbitron;
@@ -1364,7 +1380,281 @@ body {
   }
 }
 @media (min-width: 375px) and (max-width: 480px) {
-  .collection-categories__all-arrow {
+  .collection-categories__link-arrow {
     width: 21.52px;
+  }
+}
+.NFT-creators__container {
+  max-width: 1384.03px;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 96px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__container {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.NFT-creators__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Orbitron;
+  font-weight: 700;
+  font-size: 26.53px;
+  color: #fff;
+  margin-top: 64px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__header {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 18.06px;
+    line-height: 100%;
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__title {
+    margin-top: 49px;
+    margin-left: 12px;
+  }
+}
+.NFT-creators__link {
+  font-family: Orbitron;
+  font-weight: 700;
+  font-size: 26.53px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 20px;
+}
+.NFT-creators__link:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__link {
+    display: none;
+  }
+}
+.NFT-creators__link-arrow {
+  margin-right: -8px;
+}
+.NFT-creators__cards {
+  margin-top: 52px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__cards {
+    margin-top: 33px;
+    margin-left: 10px;
+  }
+}
+.NFT-creators__button {
+  display: none;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creators__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* Применяем clip-path к самой кнопке */
+  }
+  .NFT-creators__button .button {
+    width: 133.3px;
+    height: 34.21px;
+    padding-left: 12px;
+    clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 16px) 100%, 0 100%, 0 10px);
+  }
+  .NFT-creators__button {
+    margin-bottom: 20px;
+  }
+}
+.NFT-creator-card {
+  /* Полупрозрачный белый фон */
+  background: rgba(255, 255, 255, 0.01);
+  /* Размытие заднего плана */
+  backdrop-filter: blur(40px);
+  /* Эффект границ */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Мягкая тень */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creator-card {
+    width: 303px;
+  }
+}
+.NFT-creator-card__background img {
+  width: 100%;
+  height: 100%;
+}
+.NFT-creator-card__avatar {
+  margin-top: -104px;
+  margin-left: 1px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .NFT-creator-card__avatar img {
+    width: 112px;
+    height: 112px;
+    margin-top: 33px;
+    margin-left: 2px;
+  }
+}
+.card-description {
+  color: #fff;
+}
+.card-description__name {
+  font-family: Rajdhani;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24.32px;
+  line-height: 46.08px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__name {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16.84px;
+    leading-trim: NONE;
+    line-height: 31.91px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+.card-description__nickname {
+  font-family: Rajdhani;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20.16px;
+  line-height: 46.08px;
+  vertical-align: middle;
+  color: #ffb1ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -14px;
+  margin-left: 16px;
+  gap: 6px;
+}
+.card-description__nickname a {
+  color: inherit;
+}
+.card-description__nickname a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.card-description__nickname img {
+  width: 17px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__nickname {
+    font-family: Rajdhani;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13.96px;
+    line-height: 31.91px;
+    margin-top: -10px;
+    gap: 4px;
+  }
+  .card-description__nickname img {
+    width: 12px;
+  }
+}
+.card-description__creator-info {
+  margin-top: 8px;
+}
+.card-description__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__list {
+    gap: 48px;
+  }
+}
+.card-description__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -4px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__list-item {
+    margin-top: -3px;
+  }
+}
+.card-description__list-item-value {
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 31.69px;
+  line-height: 63.38px;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__list-item-value {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 21.94px;
+    line-height: 43.88px;
+  }
+}
+.card-description__list-item-label {
+  font-family: Rajdhani;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 19.81px;
+  line-height: 63.38px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -32px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__list-item-label {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 13.71px;
+    line-height: 43.88px;
+    margin-top: -21px;
+  }
+}
+.card-description__button {
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+.card-description__button .button {
+  font-family: Rajdhani;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 19.9px;
+  text-align: center;
+  margin-left: 56px;
+  padding: 12px 94px 16px 92px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .card-description__button {
+    margin-top: 13px;
+    margin-bottom: 28px;
+  }
+  .card-description__button .button {
+    font-size: 13.78px;
+    margin-left: 39px;
+    padding: 9px 64px 11px 64px;
   }
 }

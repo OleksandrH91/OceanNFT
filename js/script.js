@@ -2,9 +2,9 @@ const swiper = new Swiper('.swiper', {
   speed: 800, // Скорость самой анимации перелета слайда
   
   // Базовые настройки
-  slidesPerView: 1.1,      
+  slidesPerView: 1,      
   spaceBetween: 20,     
-  loop: true,           
+  // loop: true,           
 
   breakpoints: {
     768: {
@@ -17,9 +17,9 @@ const swiper = new Swiper('.swiper', {
     }
   },
 
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
 });

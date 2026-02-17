@@ -554,6 +554,17 @@ body {
 
     &__artist-link {
       margin-top: -1px;
+      &:hover {
+        transform: translateX(-4px);
+      }
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
     }
 
     &__artist-status {
@@ -811,7 +822,6 @@ body {
     content: "";
     display: block;
     position: absolute;
-    /* right: -20px; Устарело */
     bottom: -27px;
     height: 64px;
     border: 1.11px solid rgba(255, 255, 255, 0.6);
@@ -831,12 +841,12 @@ body {
 
   /* 1. Сдвигаем линию после первого элемента ВЛЕВО на 1px (от центра) */
   &__item:first-child::after {
-    right: -17px; /* Было -20px */
+    right: -17px;
   }
 
   /* 2. Сдвигаем линию после второго (центрального) элемента ВПРАВО на 1px (от центра) */
   &__item:nth-child(2)::after {
-    right: -22px; /* Было -20px в вашем предыдущем варианте */
+    right: -22px;
   }
 
   &__title {
@@ -944,7 +954,7 @@ body {
 .button::after {
   content: "";
   position: absolute;
-  top: 2px; /* Толщина рамки */
+  top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
@@ -1044,7 +1054,6 @@ body {
     backdrop-filter: blur(40px);
     /* Эффект границ */
     border: 1px solid rgba(255, 255, 255, 0.2);
-    // border-radius: 8px;
     /* Мягкая тень */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
@@ -1367,9 +1376,7 @@ body {
       font-family: Orbitron;
       font-weight: 700;
       font-size: 16px;
-      leading-trim: NONE;
       line-height: 100%;
-      letter-spacing: 0%;
     }
 
     @media (max-width: 768px) {
@@ -1379,12 +1386,18 @@ body {
     }
   }
 
-  &__all {
+  &__link {
     font-family: var(--font3);
     font-weight: 700;
     font-size: 26px;
     color: #fff;
     margin-right: 19px;
+    &:hover {
+      transform: scale(1.1);
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+    }
 
     @media (min-width: 375px) and (max-width: 480px) {
       display: none;
@@ -1397,7 +1410,7 @@ body {
     }
   }
 
-  &__all-arrow {
+  &__link-arrow {
     margin-right: -10px;
     margin-left: 10px;
 
@@ -1844,8 +1857,12 @@ body {
   }
 }
 
+// ---------------------------------------------------------------------------------------
+// ------------------------------------- Swiper ------------------------------------------
+// ---------------------------------------------------------------------------------------
+
 .swiper {
-  max-width: 1384px;
+  max-width: 1386px;
   height: 100%;
   @media (min-width: 375px) and (max-width: 480px) {
   }
@@ -1890,6 +1907,7 @@ body {
     height: auto;
     margin: 214px;
     margin-left: 94px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
 
@@ -2036,6 +2054,12 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    &:hover {
+      transform: scale(1.1);
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+    }
     @media (min-width: 375px) and (max-width: 480px) {
       font-family: Orbitron;
       font-weight: 700;
@@ -2050,7 +2074,7 @@ body {
     }
   }
 
-  &__all-arrow {
+  &__link-arrow {
     @media (min-width: 375px) and (max-width: 480px) {
       width: 21.52px;
     }
@@ -2076,4 +2100,433 @@ body {
 .button-utility {
 }
 .collection-categories-img {
+}
+
+// ---------------------------------------------------------------------------------------
+// ----------------------------------- NFT creators---------------------------------------
+// ---------------------------------------------------------------------------------------
+
+.NFT-creators {
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+  &__container {
+    max-width: 1384.03px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 96px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 26.53px;
+    color: #fff;
+    margin-top: 64px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 18.06px;
+      line-height: 100%;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__title {
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 49px;
+      margin-left: 12px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__link {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 26.53px;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 20px;
+
+    &:hover {
+      transform: scale(1.1);
+      text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__link-arrow {
+    margin-right: -8px;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__cards {
+    margin-top: 52px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 33px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__button {
+    display: none;
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      /* Применяем clip-path к самой кнопке */
+      .button {
+        width: 133.3px;
+        height: 34.21px;
+        padding-left: 12px;
+        clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 16px) 100%, 0 100%, 0 10px);
+      }
+
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+.NFT-creator-card {
+  /* Полупрозрачный белый фон */
+  background: rgba(255, 255, 255, 0.01);
+  /* Размытие заднего плана */
+  backdrop-filter: blur(40px);
+  /* Эффект границ */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Мягкая тень */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+    width: 303px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__background {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__avatar {
+    margin-top: -104px;
+    margin-left: 1px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      img {
+        width: 112px;
+        height: 112px;
+        margin-top: 33px;
+        margin-left: 2px;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__description {
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+.card-description {
+  color: #fff;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__name {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24.32px;
+    line-height: 46.08px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 2px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Rajdhani;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16.84px;
+      leading-trim: NONE;
+      line-height: 31.91px;
+      letter-spacing: 0px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__nickname {
+    font-family: Rajdhani;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20.16px;
+    line-height: 46.08px;
+    vertical-align: middle;
+    color: #ffb1ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -14px;
+    margin-left: 16px;
+    gap: 6px;
+
+    a {
+      color: inherit;
+      &:hover {
+        text-shadow:
+          0 0 10px rgba(255, 255, 255, 0.8),
+          0 0 20px rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    img {
+      width: 17px;
+    }
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Rajdhani;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 13.96px;
+      line-height: 31.91px;
+
+      margin-top: -10px;
+      gap: 4px;
+      img {
+        width: 12px;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__creator-info {
+    margin-top: 8px;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      gap: 48px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -4px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: -3px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list-item-value {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 31.69px;
+    line-height: 63.38px;
+    text-align: center;
+    vertical-align: middle;
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 21.94px;
+      line-height: 43.88px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list-item-label {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 19.81px;
+    line-height: 63.38px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -32px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      font-family: Rajdhani;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 13.71px;
+      line-height: 43.88px;
+      margin-top: -21px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 38px;
+
+    .button {
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 19.9px;
+      text-align: center;
+      margin-left: 56px;
+      padding: 12px 94px 16px 92px;
+    }
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 13px;
+      margin-bottom: 28px;
+      .button {
+        font-size: 13.78px;
+        margin-left: 39px;
+        padding: 9px 64px 11px 64px;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
 }
