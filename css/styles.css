@@ -1676,6 +1676,13 @@ body {
   margin-top: 62px;
   margin-left: 38px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__header {
+    font-size: 19.23px;
+    margin-top: 110px;
+    margin-left: 18px;
+  }
+}
 .top-sellers__header p {
   font-family: Roboto;
   font-weight: 400;
@@ -1687,10 +1694,22 @@ body {
   margin-top: 24.6px;
   margin-left: -22px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__header p {
+    font-size: 14px;
+    max-width: 325px;
+    margin-top: 19px;
+  }
+}
 .top-sellers__title {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__title {
+    gap: 6px;
+  }
 }
 .top-sellers__title select {
   appearance: none;
@@ -1711,8 +1730,19 @@ body {
   background-repeat: no-repeat;
   background-position: right 11px center;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__title select {
+    font-size: 19.23px;
+  }
+}
 .top-sellers__sellers {
   margin-top: 58px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__sellers {
+    margin-top: 27.5px;
+    margin-left: 14px;
+  }
 }
 .top-sellers__list {
   counter-reset: seller-counter;
@@ -1728,6 +1758,9 @@ body {
   }
   .top-sellers__list > li:nth-child(3n+1), .top-sellers__list > li:nth-child(3n) {
     display: none;
+  }
+  .top-sellers__list {
+    row-gap: 25.4px;
   }
 }
 .top-sellers__list-item {
@@ -1746,6 +1779,21 @@ body {
   font-size: 19.9px;
   padding: 13px 78px 17px 77px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__button .button {
+    display: none;
+  }
+}
+.top-sellers__button-mobile {
+  display: none;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .top-sellers__button-mobile {
+    display: block;
+    margin-top: -26px;
+    margin-left: 106px;
+  }
+}
 .seller-card {
   position: relative;
 }
@@ -1762,11 +1810,26 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__container {
+    width: 316.79px;
+    height: 89px;
+    border-width: 2px;
+    border-radius: 20.71px;
+    padding-top: 14px;
+  }
+}
 .seller-card__number {
   text-align: right;
   position: absolute;
   top: 39px;
   right: 393px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__number {
+    top: 28px;
+    right: 285px;
+  }
 }
 .seller-card__number::before {
   content: counter(seller-counter);
@@ -1777,10 +1840,26 @@ body {
   line-height: 44.11px;
   vertical-align: middle;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__number::before {
+    font-size: 13.81px;
+    line-height: 31.97px;
+  }
+}
 .seller-card__avatar {
   padding-left: 30px;
   margin-left: 12px;
   margin-top: 6px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__avatar {
+    padding-left: 10px;
+    margin-left: 17px;
+    margin-top: 6.1px;
+  }
+  .seller-card__avatar img {
+    width: 51px;
+  }
 }
 .seller-card__info {
   display: flex;
@@ -1816,6 +1895,15 @@ body {
   background-clip: padding-box, border-box;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__growth-badge--green {
+    font-size: 11.66px;
+    line-height: 22.17px;
+    padding: 1px 11px 1px 9px;
+    margin-right: 12px;
+    margin-top: 18px;
+  }
+}
 .seller-card__growth-badge--red {
   color: #ff0000;
   text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
@@ -1827,12 +1915,30 @@ body {
   border: 2px solid #7a001a;
   box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.1), 0 0 20px rgba(122, 0, 26, 0.4);
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card__growth-badge--red {
+    font-size: 11.66px;
+    line-height: 22.17px;
+    padding: 1px 11px 1px 9px;
+    margin-right: 12px;
+    margin-top: 18px;
+  }
+}
 .seller-card .name {
   font-family: Roboto;
   font-weight: 500;
   font-style: Medium;
   font-size: 19.05px;
   line-height: 44.11px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card .name {
+    font-size: 13.81px;
+    line-height: 31.97px;
+    margin-left: -3.5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
 }
 .seller-card .balance {
   display: flex;
@@ -1842,10 +1948,22 @@ body {
 .seller-card .balance img {
   margin-right: 4px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card .balance img {
+    margin-right: 0px;
+    margin-left: -4px;
+  }
+}
 .seller-card .amount {
   font-family: Roboto;
   font-weight: 500;
   font-style: Medium;
   font-size: 13.76px;
   line-height: 44.11px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .seller-card .amount {
+    font-size: 9.97px;
+    line-height: 31.97px;
+  }
 }
