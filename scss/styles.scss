@@ -1350,9 +1350,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--font3);
+    font-family: Orbitron;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 26.53px;
     color: #fff;
     margin-bottom: 48px;
 
@@ -1429,7 +1429,7 @@ body {
         width: 303.97px;
         margin-left: 11px;
         margin-top: 38px;
-        margin-bottom: 20px; //удалить потом
+        margin-bottom: 20px;
       }
 
       @media (max-width: 768px) {
@@ -1862,7 +1862,7 @@ body {
 // ---------------------------------------------------------------------------------------
 
 .swiper {
-  max-width: 1386px;
+  max-width: 1385px;
   height: 100%;
   @media (min-width: 375px) and (max-width: 480px) {
   }
@@ -2521,6 +2521,462 @@ body {
         margin-left: 39px;
         padding: 9px 64px 11px 64px;
       }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------------------
+// ----------------------------------- TOP sellers ---------------------------------------
+// ---------------------------------------------------------------------------------------
+
+.top-sellers {
+  &__container {
+    max-width: 1381.11px;
+    margin: 0 auto;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__header {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 26.53px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+    margin-left: 38px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 17.69px;
+      line-height: 140%;
+      text-align: center;
+      max-width: 506.3px;
+      margin-top: 24.6px;
+      margin-left: -22px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      color: #ff56f6;
+      font-family: Orbitron;
+      font-weight: 700;
+      font-size: 26.53px;
+
+      margin-top: -2px;
+      padding-right: 30px;
+
+      /* Добавление своей стрелки через фоновое изображение */
+      background-image: url("../img/select-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right 11px center;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  &__sellers {
+    margin-top: 58px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list {
+    counter-reset: seller-counter;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 36px;
+    row-gap: 35px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      & > li:nth-child(3n + 1),
+      & > li:nth-child(3n) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__list-item {
+    counter-increment: seller-counter;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+    margin-left: 17px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    .button {
+      font-family: Rajdhani;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 19.9px;
+
+      padding: 13px 78px 17px 77px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+}
+.seller-card {
+  position: relative;
+
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
+
+  &__container {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 28.57px;
+
+    max-width: 437.04px;
+    padding: 15px 0px 20px 12px;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__number {
+    text-align: right;
+    position: absolute;
+    top: 39px;
+    right: 393px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    &::before {
+      content: counter(seller-counter);
+      font-family: Roboto;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 19.05px;
+      line-height: 44.11px;
+      vertical-align: middle;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  &__avatar {
+    padding-left: 30px;
+    margin-left: 12px;
+    margin-top: 6px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6px;
+    margin-left: 13px;
+    flex-grow: 4;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  &__growth-badge {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14.7px;
+    line-height: 47.14px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    border-radius: 50px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    &--green {
+      color: #00ff88;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+      background-color: #1e244d;
+
+      margin-top: 20px;
+      margin-right: 17px;
+      padding: 8px 16px 8px 15px;
+      // Добавил внутренние отступы для формы капсулы
+      border-radius: 50px;
+
+      // Градиентная рамка
+      border: 2px solid transparent;
+      background-image: linear-gradient(#1e244d, #1e244d), linear-gradient(to right, #2d4c59, #0f5c4a);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+
+    &--red {
+      color: #ff0000;
+      text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+
+      margin-top: 20px;
+      margin-right: 17px;
+      padding: 8px 16px 8px 15px;
+      // Добавил внутренние отступы для формы капсулы
+      border-radius: 50px;
+
+      // Чтобы красный фон не "съедал" прозрачность,
+      // используем тот же метод, если нужна сложная рамка,
+      // либо оставляем так для простого цвета:
+      background-color: rgba(255, 0, 0, 0.05);
+      border: 2px solid #7a001a;
+
+      box-shadow:
+        inset 0 0 10px rgba(255, 0, 0, 0.1),
+        0 0 20px rgba(122, 0, 26, 0.4);
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  .name {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 19.05px;
+    line-height: 44.11px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  .balance {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+
+    img {
+      margin-right: 4px;
+
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  .eth-icon {
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+
+  .amount {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 13.76px;
+    line-height: 44.11px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
     }
 
     @media (max-width: 768px) {
