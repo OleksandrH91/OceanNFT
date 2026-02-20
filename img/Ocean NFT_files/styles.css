@@ -1318,7 +1318,7 @@ body {
   padding-top: 2px;
   padding-left: 2px;
 }
-.collection-categories__buttons button:hover, .collection-categories__buttons button:active, .collection-categories__buttons button:focus {
+.collection-categories__buttons button:hover {
   background: linear-gradient(90deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #ff56f6 117.04%);
 }
 @media (min-width: 375px) and (max-width: 480px) {
@@ -1966,171 +1966,14 @@ body {
     line-height: 31.97px;
   }
 }
-.what-are-nfts__bg-container {
-  background: url(../img/what-are-nfts-bg.png);
-  background-size: cover;
-  margin-top: 158px;
-  height: 556.37px;
-  z-index: 1;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__bg-container {
-    height: 300px;
-    margin-top: 107px;
-  }
-}
 .what-are-nfts .wrapper {
-  overflow: visible;
+  margin-top: 158px;
+}
+.what-are-nfts {
+  background: url(../img/what-are-nfts-bg.png);
+  background-size: 100% 556.36px;
 }
 .what-are-nfts__container {
   width: 577.04px;
   height: 473.13px;
-  position: relative;
-  z-index: 2;
-  /* Полупрозрачный белый фон */
-  background: rgba(255, 255, 255, 0.1);
-  /* Размытие заднего плана */
-  backdrop-filter: blur(40px);
-  /* Эффект границ */
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  /* Мягкая тень */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  margin-top: -339px;
-  margin-left: 870px;
-  color: #fff;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__container {
-    margin-top: -177px;
-    margin-left: 2px;
-    width: 335.4px;
-    height: 275px;
-  }
-}
-.what-are-nfts__content {
-  width: 458.45px;
-  height: 292.8px;
-  margin-top: 55px;
-  margin-left: 70px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__content {
-    width: 266.46px;
-    height: 170.19px;
-    margin-top: 33px;
-    margin-left: 40px;
-  }
-}
-.what-are-nfts__header {
-  font-family: Inter;
-  font-weight: 800;
-  font-size: 44.51px;
-  line-height: 60.09px;
-  letter-spacing: 0.9px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__header {
-    font-size: 25.87px;
-    line-height: 34.92px;
-  }
-}
-.what-are-nfts__text {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 20.03px;
-  line-height: 35.61px;
-  margin-top: 20px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__text {
-    font-size: 11.64px;
-    line-height: 20.7px;
-    margin-top: 10px;
-  }
-}
-.what-are-nfts__links {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 17.8px;
-  line-height: 26.71px;
-  margin-top: 46px;
-  margin-left: 70px;
-  display: flex;
-  gap: 48px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__links {
-    font-size: 10.35px;
-    line-height: 15.52px;
-    margin-top: 26px;
-    margin-left: 40px;
-    gap: 20px;
-  }
-}
-.what-are-nfts__links a {
-  color: #fff;
-  display: flex;
-  gap: 8px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__links a {
-    gap: 6px;
-  }
-}
-.what-are-nfts__links a svg {
-  margin-top: 4px;
-}
-@media (min-width: 375px) and (max-width: 480px) {
-  .what-are-nfts__links a svg {
-    margin-top: -2px;
-  }
-}
-.subscribe__container {
-  width: 1265.75px;
-  margin: 0 auto;
-  margin-top: 160px;
-  display: flex;
-}
-.subscribe__image {
-  margin-left: -56px;
-}
-.subscribe__form {
-  color: #fff;
-  margin-left: 76px;
-  margin-top: 37px;
-}
-.subscribe__form-header {
-  font-family: Orbitron;
-  font-weight: 700;
-  font-size: 39.8px;
-  line-height: 100%;
-}
-.subscribe__form-text {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 19.9px;
-  line-height: 35.37px;
-  letter-spacing: 0.38px;
-  margin-top: 32px;
-}
-.subscribe__form-form {
-  margin-top: 49px;
-  display: flex;
-  gap: 8px;
-}
-.subscribe__form-form input {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 15.48px;
-  line-height: 26.53px;
-  padding: 14px 45px 13px 17px;
-  border-radius: 5.53px 0px 0px 5.53px;
-}
-.subscribe__form-form button {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 15.48px;
-  line-height: 22.11px;
-  padding: 10px 38px 12px 35px;
-  border-radius: 0px 5.53px 5.53px 0px;
 }

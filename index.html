@@ -14,8 +14,8 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="header">
+    <header class="header">
+      <div class="wrapper">
         <div class="header__container">
           <a href="/" class="logo header__logo">
             <svg
@@ -85,10 +85,12 @@
             </a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <div class="hero">
+    <main>
+      <div class="hero">
+        <div class="wrapper">
           <div class="hero__container">
             <div class="hero__content">
               <h1 class="hero__title">
@@ -100,7 +102,7 @@
                 collectibles and non- fungible tokens (NFTs).
               </p>
               <div class="hero__links">
-                <button class="button hero__button">
+                <button type="button" class="button hero__button">
                   Explore
                   <svg
                     class="button__arrow"
@@ -191,7 +193,7 @@
                       </li>
                     </ul>
                   </div>
-                  <button class="auction__button button">
+                  <button type="button" class="auction__button button">
                     Place Bid
                     <svg
                       width="25"
@@ -242,8 +244,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="top-nft">
+      <div class="top-nft">
+        <div class="wrapper">
           <div class="top-nft__container">
             <div class="top-nft__header">
               <h2 class="top-nft__title">Top NFT’s now</h2>
@@ -373,7 +377,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -494,7 +498,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -615,7 +619,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -737,7 +741,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -858,7 +862,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -979,7 +983,7 @@
                               </li>
                             </ul>
                           </div>
-                          <button class="auction__button button">
+                          <button type="button" class="auction__button button">
                             Place Bid
                             <svg
                               width="25"
@@ -1010,7 +1014,7 @@
               </div>
             </div>
             <div class="top-nft__button">
-              <button class="button hero__button">
+              <button type="button" class="button hero__button">
                 Explore
                 <svg
                   class="button__arrow"
@@ -1037,8 +1041,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="collection-categories">
+      <div class="collection-categories">
+        <div class="wrapper">
           <div class="collection-categories__container">
             <div class="collection-categories__categories">
               <div class="collection-categories__header">
@@ -1047,20 +1053,37 @@
                 </h2>
               </div>
               <div class="collection-categories__buttons">
-                <button class="button-transparent button-photography">
+                <button
+                  type="button"
+                  class="button-transparent button-photography"
+                >
                   Photography
                 </button>
-                <button class="button-transparent button-sports">Sports</button>
-                <button class="button-transparent button-brands">Brands</button>
-                <button class="button-transparent button-collectibles">
+                <button type="button" class="button-transparent button-sports">
+                  Sports
+                </button>
+                <button type="button" class="button-transparent button-brands">
+                  Brands
+                </button>
+                <button
+                  type="button"
+                  class="button-transparent button-collectibles"
+                >
                   Collectibles
                 </button>
-                <button class="button-transparent button-art">Art</button>
-                <button class="button-transparent button-utility">
+                <button type="button" class="button-transparent button-art">
+                  Art
+                </button>
+                <button type="button" class="button-transparent button-utility">
                   Utility
                 </button>
-                <button class="button-transparent button-brands">Brands</button>
-                <button class="button-transparent button-collectibles">
+                <button type="button" class="button-transparent button-brands">
+                  Brands
+                </button>
+                <button
+                  type="button"
+                  class="button-transparent button-collectibles"
+                >
                   Collectibles
                 </button>
               </div>
@@ -1102,15 +1125,17 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="NFT-creators">
-          <div class="NFT-creators__container">
-            <div class="NFT-creators__header">
-              <h2 class="NFT-creators__title">Explore Collections</h2>
-              <a class="NFT-creators__link" href="/">
+      <div class="nft-creators">
+        <div class="wrapper">
+          <div class="nft-creators__container">
+            <div class="nft-creators__header">
+              <h2 class="nft-creators__title">Explore Collections</h2>
+              <a class="nft-creators__link" href="/">
                 View all
                 <svg
-                  class="NFT-creators__link-arrow"
+                  class="nft-creators__link-arrow"
                   width="52"
                   height="27"
                   viewBox="0 0 52 27"
@@ -1134,24 +1159,24 @@
                 </svg>
               </a>
             </div>
-            <div class="NFT-creators__cards">
+            <div class="nft-creators__cards">
               <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="../img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar1.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Jhones Nickey</h3>
@@ -1192,24 +1217,24 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="/img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar2.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Cody Fisher</h3>
@@ -1250,24 +1275,24 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="../img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar3.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Jerome Bell</h3>
@@ -1308,24 +1333,24 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="../img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar1.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Jhones Nickey</h3>
@@ -1366,24 +1391,24 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="/img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar2.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Cody Fisher</h3>
@@ -1424,24 +1449,24 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="NFT-creator-card">
-                      <div class="NFT-creator-card__background">
+                    <div class="nft-creator-card">
+                      <div class="nft-creator-card__background">
                         <img
                           src="../img/NFT-creator-card-background.png"
                           alt="background"
                         />
                       </div>
-                      <div class="NFT-creator-card__avatar">
+                      <div class="nft-creator-card__avatar">
                         <img src="../img/NFT-creator-card-avatar3.png" alt="" />
                       </div>
                       <div
-                        class="NFT-creator-card__description card-description"
+                        class="nft-creator-card__description card-description"
                       >
                         <div class="card-description__name">
                           <h3>Jerome Bell</h3>
@@ -1482,7 +1507,7 @@
                           </ul>
                         </div>
                         <div class="card-description__button">
-                          <button class="button">Follow</button>
+                          <button type="button" class="button">Follow</button>
                         </div>
                       </div>
                     </div>
@@ -1490,8 +1515,8 @@
                 </div>
               </div>
             </div>
-            <div class="NFT-creators__button">
-              <button class="button hero__button">
+            <div class="nft-creators__button">
+              <button type="button" class="button hero__button">
                 Explore
                 <svg
                   class="button__arrow"
@@ -1518,8 +1543,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="top-sellers">
+      <div class="top-sellers">
+        <div class="wrapper">
           <div class="top-sellers__container">
             <div class="top-sellers__header">
               <div class="top-sellers__title">
@@ -1829,10 +1856,10 @@
               </ul>
             </div>
             <div class="top-sellers__button">
-              <button class="button">Explore all</button>
+              <button type="button" class="button">Explore all</button>
             </div>
             <div class="top-sellers__button-mobile">
-              <button class="button hero__button">
+              <button type="button" class="button hero__button">
                 Explore
                 <svg
                   class="button__arrow"
@@ -1859,8 +1886,79 @@
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+
+      <div class="what-are-nfts">
+        <div class="what-are-nfts__bg-container"></div>
+        <div class="wrapper">
+          <div class="what-are-nfts__container">
+            <div class="what-are-nfts__content">
+              <div class="what-are-nfts__header">
+                <h3>What are NFT’s ?</h3>
+              </div>
+              <div class="what-are-nfts__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Interdum quis amet, faucibus lorem. Lectus amet odio quis sed
+                  adipiscing adipiscing magna non. Nullam turpis faucibus
+                  ridiculus suscipit. Et blandit suspendisse curabitur eu congue
+                  dui ut.
+                </p>
+              </div>
+            </div>
+            <div class="what-are-nfts__links">
+              <a href="/">Learn more</a>
+              <a href="/"
+                ><svg
+                  width="13"
+                  height="18"
+                  viewBox="0 0 13 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.608943 0.0745105C0.492662 -0.0110257 0.338514 -0.0241851 0.209611 0.0416119C0.0810903 0.107409 0 0.240938 0 0.386853V17.4167C0 17.5626 0.0810903 17.6961 0.209611 17.7619C0.263926 17.7898 0.323596 17.8037 0.382502 17.8037C0.462444 17.8037 0.542005 17.7786 0.608943 17.729L12.084 9.2141C12.1823 9.14095 12.2401 9.02484 12.2401 8.90176C12.2401 8.77868 12.1823 8.66257 12.084 8.58942L0.608943 0.0745105Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Watch video</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <div class="wrapper">
+          <div class="subscribe__container">
+            <div class="subscribe__image">
+              <img src="../img/subscribe-img.png" alt="" />
+            </div>
+            <div class="subscribe__form">
+              <div class="subscribe__form-header">
+                <h3>Subscribe to us</h3>
+              </div>
+              <div class="subscribe__form-text">
+                <p>
+                  Specially developed to help restore a more youthful appearance
+                  with improved radiance and bounce.
+                </p>
+              </div>
+              <form class="subscribe__form-form">
+                <input
+                  type="email"
+                  placeholder="Your work email address"
+                  required
+                />
+                <button type="submit" class="button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>

@@ -18,7 +18,7 @@
 /* 3. Inter (Вариативный шрифт) */
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-VariableFont.ttf') format('truetype-variations');
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
     /* Диапазон весов и автоматическая подстройка оптического размера */
     font-weight: 100 900;
     font-optical-sizing: auto;
