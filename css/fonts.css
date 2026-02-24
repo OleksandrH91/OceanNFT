@@ -43,7 +43,7 @@
 /* 5. MuseoModerno */
 @font-face {
     font-family: 'MuseoModerno';
-    src: url('../fonts/Museo Moderno-Regular.ttf') format('truetype');
+    src: url('../fonts/MuseoModerno-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
