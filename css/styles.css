@@ -22,7 +22,11 @@ body {
   padding: 0 15px;
   overflow: hidden;
 }
-
+@media (min-width: 375px) and (max-width: 480px) {
+  .wrapper {
+    max-width: 480px;
+  }
+}
 .header__container {
   max-width: 1394.42px;
   margin: 0px auto;
@@ -2091,19 +2095,50 @@ body {
   margin-top: 160px;
   display: flex;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__container {
+    flex-direction: column;
+    max-width: 324px;
+    margin-top: 112px;
+  }
+}
 .subscribe__image {
   margin-left: -56px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__image {
+    order: 1;
+    margin-left: 0px;
+    margin-top: 109px;
+    width: 324px;
+    height: 380px;
+  }
+  .subscribe__image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .subscribe__form {
   color: #fff;
   margin-left: 76px;
   margin-top: 37px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
 .subscribe__form-header {
   font-family: Orbitron;
   font-weight: 700;
   font-size: 39.8px;
   line-height: 100%;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form-header {
+    font-size: 26.27px;
+  }
 }
 .subscribe__form-text {
   font-family: Inter;
@@ -2113,10 +2148,24 @@ body {
   letter-spacing: 0.38px;
   margin-top: 32px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form-text {
+    font-size: 13.14px;
+    line-height: 23.35px;
+    letter-spacing: 0.09px;
+    margin-top: 21.5px;
+  }
+}
 .subscribe__form-form {
   margin-top: 49px;
   display: flex;
   gap: 8px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form-form {
+    margin-top: 27px;
+    gap: 4px;
+  }
 }
 .subscribe__form-form input {
   font-family: Inter;
@@ -2126,6 +2175,15 @@ body {
   padding: 14px 45px 13px 17px;
   border-radius: 5.53px 0px 0px 5.53px;
 }
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form-form input {
+    font-size: 10.22px;
+    line-height: 17.51px;
+    padding: 0px 21px 2px 12px;
+    height: 34px;
+    margin-top: 6px;
+  }
+}
 .subscribe__form-form button {
   font-family: Inter;
   font-weight: 500;
@@ -2133,4 +2191,13 @@ body {
   line-height: 22.11px;
   padding: 10px 38px 12px 35px;
   border-radius: 0px 5.53px 5.53px 0px;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .subscribe__form-form button {
+    font-size: 10.22px;
+    line-height: 14.59px;
+    height: 34px;
+    padding: 0px 25px 3px 24px;
+    margin-top: 6px;
+  }
 }
