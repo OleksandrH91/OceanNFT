@@ -13,6 +13,7 @@
 body {
   background-image: url("/img/Bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -21,7 +22,7 @@ body {
   padding: 0 15px;
   overflow: hidden;
   @media (min-width: 375px) and (max-width: 480px) {
-    max-width: 480px;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
@@ -202,9 +203,15 @@ body {
 }
 
 .menu-button {
+  background: transparent; /* Прозрачный фон */
+  border: none; /* Убираем рамку */
+  padding: 0; /* Убираем внутренние отступы */
+  cursor: pointer; /* Меняем курсор на "палец" при наведении */
+  outline: none;
+
   &__icon {
     @media (min-width: 375px) and (max-width: 480px) {
-      margin-top: 3px;
+      margin-top: 2px;
       margin-right: 7px;
     }
 
@@ -3438,11 +3445,22 @@ body {
 
 .footer {
   color: #fff;
+
   &__container {
     max-width: 1591.86px;
     display: flex;
     flex-direction: column;
     margin-top: 140px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__divider {
@@ -3455,6 +3473,21 @@ body {
     opacity: 0.2; // Обычно линии делают полупрозрачными
 
     margin-left: 69px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin: 68px auto 0;
+      max-width: 324px;
+
+      &:last-of-type {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__content {
@@ -3462,11 +3495,33 @@ body {
     justify-content: space-around;
     margin-top: 97px;
     margin-bottom: 66px;
+
+    @media (min-width: 375px) and (max-width: 480px) {
+      flex-direction: column;
+      margin-top: 28px;
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__social {
     flex: 0.8;
     margin-left: 71px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-left: 14px;
+      margin-top: -8px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__lists {
@@ -3474,14 +3529,43 @@ body {
     margin-left: 67px;
     gap: 33px;
     flex: 3;
+    @media (min-width: 375px) and (max-width: 480px) {
+      flex-direction: column;
+      margin-left: 11px;
+      margin-top: 51px;
+      gap: 18px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__list {
     width: 100%;
     max-width: 177px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      max-width: none;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__bottom {
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 }
 
@@ -3489,12 +3573,44 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
+  @media (min-width: 375px) and (max-width: 480px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
 
   &__logo {
     gap: 7px;
     margin-left: -7px;
     .logo__text-part--color-gray {
       color: #fff;
+    }
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-left: -11px;
+      margin-top: -1px;
+      gap: 0px;
+      .logo__text {
+        font-family: Orbitron;
+        font-weight: 700;
+        font-size: 19.9px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 14px;
+        margin-left: -1px;
+      }
+      .logo__icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
     }
   }
 
@@ -3508,6 +3624,16 @@ body {
     color: #d9dbe1;
     margin-top: 31px;
     margin-left: -3px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      max-width: none;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__links {
@@ -3515,9 +3641,25 @@ body {
     margin-left: -3px;
     display: flex;
     gap: 17px;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__link {
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
     &:hover {
       transition: ease 0.3s;
       transform: scale(1.4);
@@ -3526,12 +3668,39 @@ body {
 }
 
 .list {
+  &.active {
+    .list__title svg {
+      transform: rotate(180deg);
+    }
+    .list__items {
+      height: 220px;
+    }
+  }
   &__title {
     font-family: Inter;
     font-weight: 500;
     font-size: 19.9px;
     line-height: 30.95px;
     letter-spacing: 0.41px;
+    svg {
+      display: none;
+      transition: transform 0.4s ease;
+    }
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: flex;
+      justify-content: space-between;
+      svg {
+        display: block;
+        margin-right: 33px;
+        margin-top: 11px;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__items {
@@ -3541,14 +3710,42 @@ body {
     line-height: 26.53px;
 
     margin-top: 18px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__item {
     margin-top: 13px;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__link {
     color: #d9dbe1;
+    @media (min-width: 375px) and (max-width: 480px) {
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
     &:hover {
       color: #fff;
       text-shadow:
@@ -3565,6 +3762,35 @@ body {
       font-size: 22px;
       color: #2ec5ce;
       margin-left: 9px;
+      @media (min-width: 375px) and (max-width: 480px) {
+      }
+
+      @media (max-width: 768px) {
+      }
+
+      @media (max-width: 1440px) {
+      }
+    }
+  }
+
+  &__divider {
+    display: none;
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: block;
+      width: 100%; // Растягивается на всю ширину контейнера
+      max-width: 324px; // Если нужно ограничение, используем max-width
+      height: 1.1px; // Обычно разделители тонкие, 11px — это уже прямоугольник
+      border: none; // Сбрасываем дефолтную рамку браузера
+      background-color: #fff; // Цвет линии
+      opacity: 0.2; // Обычно линии делают полупрозрачными
+
+      margin-top: -3px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
     }
   }
 }
@@ -3573,6 +3799,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  @media (min-width: 375px) and (max-width: 480px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 1440px) {
+  }
   &__copyright {
     font-family: Inter;
     font-weight: 400;
@@ -3583,6 +3819,16 @@ body {
     color: #d9dbe1;
     margin-top: 27.5px;
     margin-left: 65px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      margin-left: 21px;
+      margin-top: 38px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__nav {
@@ -3594,10 +3840,35 @@ body {
 
     margin-top: 25px;
     margin-right: 164px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      order: -1;
+      display: flex;
+      margin-right: 0px;
+      margin-top: 22px;
+      margin-left: 25px;
+      gap: 35px;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
   }
 
   &__link {
     color: #d9dbe1;
+    @media (min-width: 375px) and (max-width: 480px) {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
     &:hover {
       color: #fff;
       text-shadow:
@@ -3609,5 +3880,126 @@ body {
   &__divider {
     margin-left: 5.5px;
     margin-right: 6px;
+    @media (min-width: 375px) and (max-width: 480px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+    }
+
+    @media (max-width: 1440px) {
+    }
+  }
+}
+
+// -------------------------------------------------------------------------------------
+// -------------------------------------- Modal ----------------------------------------
+// -------------------------------------------------------------------------------------
+
+.modal {
+  display: none; // Скрыто по умолчанию
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(40px);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  // Убираем display: flex отсюда, чтобы он не перебивал display: none
+  justify-content: center;
+  align-items: center;
+
+  &.is-open {
+    display: flex;
+  }
+
+  &__content {
+  }
+
+  &__close {
+  }
+
+  &__close-btn {
+    // Позиционирование в углу модального окна
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    // Размеры и центровка иконки
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Эффект стекла (Glassmorphism)
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    // Граница и скругление как у карточек в макете
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    // Стили для иконки внутри кнопки
+    svg {
+      width: 20px;
+      height: 20px;
+      opacity: 0.8;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+    }
+
+    // Состояние при наведении
+    &:hover {
+      // Градиент из вашего макета (розовый -> фиолетовый)
+      background: linear-gradient(135deg, #e025ce 0%, #4b33e3 100%);
+      border-color: transparent;
+
+      // Неоновое свечение в тон градиента
+      box-shadow: 0 0 20px rgba(224, 37, 206, 0.4);
+      transform: scale(1.05);
+
+      svg {
+        opacity: 1;
+        transform: rotate(90deg); // Поворот крестика для динамики
+      }
+    }
+
+    // Состояние при клике
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__item {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 19.9px;
+    line-height: 100%;
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      &:hover {
+        color: #fff;
+        text-shadow:
+          0 0 10px rgba(255, 255, 255, 0.8),
+          /* Белое свечение */ 0 0 20px rgba(255, 255, 255, 0.6);
+      }
+    }
   }
 }
